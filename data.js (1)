@@ -1,0 +1,5981 @@
+const services = [
+
+
+{
+id:0,
+category:"Tools",
+name:"OM COMPUTERS Portal",
+icon:"🌐",
+description:"OM COMPUTERS & AINEX SERVICES",
+documents:["None"],
+charges:"Free",
+processingTime:"Instant",
+portal:"https://www.omcomputers.online"
+},
+
+{
+id:1,
+category:"Aadhaar",
+name:"UIDAI Home",
+icon:"🆔",
+description:"Official UIDAI Website",
+documents:["None"],
+charges:"Free",
+processingTime:"Instant",
+portal:"https://uidai.gov.in"
+},
+
+{
+id:2,
+category:"Aadhaar",
+name:"My Aadhaar",
+icon:"🆔",
+description:"My Aadhaar Portal",
+documents:["Aadhaar Number"],
+charges:"Free",
+processingTime:"Instant",
+portal:"https://myaadhaar.uidai.gov.in"
+},
+
+{
+id:3,
+category:"Aadhaar",
+name:"Book Appointment",
+icon:"📅",
+description:"Book Aadhaar Appointment",
+documents:["Aadhaar"],
+charges:"Free",
+processingTime:"5 Minutes",
+portal:"https://appointments.uidai.gov.in"
+},
+
+{
+id:4,
+category:"Aadhaar",
+name:"Download Aadhaar",
+icon:"⬇️",
+description:"Download e-Aadhaar",
+documents:["Aadhaar Number"],
+charges:"Free",
+processingTime:"Instant",
+portal:"https://myaadhaar.uidai.gov.in"
+},
+
+{
+id:5,
+category:"Aadhaar",
+name:"PVC Aadhaar",
+icon:"💳",
+description:"Order Aadhaar PVC Card",
+documents:["Aadhaar Number"],
+charges:"Official Charges",
+processingTime:"5 Minutes",
+portal:"https://myaadhaar.uidai.gov.in"
+},
+
+{
+id:6,
+category:"Aadhaar",
+name:"Update Aadhaar",
+icon:"✏️",
+description:"Update Aadhaar Details",
+documents:["Aadhaar"],
+charges:"As Per UIDAI",
+processingTime:"10 Minutes",
+portal:"https://myaadhaar.uidai.gov.in"
+},
+
+{
+id:7,
+category:"Aadhaar",
+name:"Check Aadhaar Status",
+icon:"📋",
+description:"Check Update Status",
+documents:["URN/SRN"],
+charges:"Free",
+processingTime:"Instant",
+portal:"https://myaadhaar.uidai.gov.in"
+},
+
+{
+id:8,
+category:"Aadhaar",
+name:"Locate Enrolment Center",
+icon:"📍",
+description:"Find Aadhaar Center",
+documents:["None"],
+charges:"Free",
+processingTime:"Instant",
+portal:"https://appointments.uidai.gov.in"
+},
+
+{
+id:9,
+category:"Aadhaar",
+name:"Verify Aadhaar",
+icon:"✅",
+description:"Verify Aadhaar Number",
+documents:["Aadhaar Number"],
+charges:"Free",
+processingTime:"Instant",
+portal:"https://myaadhaar.uidai.gov.in"
+},
+
+{
+id:10,
+category:"Aadhaar",
+name:"Verify Email & Mobile",
+icon:"📱",
+description:"Verify Registered Mobile",
+documents:["Aadhaar Number"],
+charges:"Free",
+processingTime:"Instant",
+portal:"https://myaadhaar.uidai.gov.in"
+},
+
+{
+id:11,
+category:"Aadhaar",
+name:"Retrieve EID/UID",
+icon:"🔍",
+description:"Recover Aadhaar Number",
+documents:["Registered Mobile"],
+charges:"Free",
+processingTime:"Instant",
+portal:"https://myaadhaar.uidai.gov.in"
+},
+
+{
+id:12,
+category:"Aadhaar",
+name:"Lock Aadhaar",
+icon:"🔒",
+description:"Lock Aadhaar Number",
+documents:["Aadhaar"],
+charges:"Free",
+processingTime:"Instant",
+portal:"https://myaadhaar.uidai.gov.in"
+},
+
+{
+id:13,
+category:"Aadhaar",
+name:"Unlock Aadhaar",
+icon:"🔓",
+description:"Unlock Aadhaar Number",
+documents:["VID"],
+charges:"Free",
+processingTime:"Instant",
+portal:"https://myaadhaar.uidai.gov.in"
+},
+
+{
+id:14,
+category:"Aadhaar",
+name:"Generate VID",
+icon:"🆔",
+description:"Generate Virtual ID",
+documents:["Aadhaar"],
+charges:"Free",
+processingTime:"Instant",
+portal:"https://myaadhaar.uidai.gov.in"
+},
+
+{
+id:15,
+category:"Aadhaar",
+name:"Retrieve VID",
+icon:"🆔",
+description:"Recover Virtual ID",
+documents:["Aadhaar"],
+charges:"Free",
+processingTime:"Instant",
+portal:"https://myaadhaar.uidai.gov.in"
+},
+
+{
+id:16,
+category:"Aadhaar",
+name:"Offline e-KYC",
+icon:"📄",
+description:"Download Offline e-KYC",
+documents:["Aadhaar"],
+charges:"Free",
+processingTime:"Instant",
+portal:"https://myaadhaar.uidai.gov.in"
+},
+
+{
+id:17,
+category:"Aadhaar",
+name:"Check Authentication History",
+icon:"📜",
+description:"Authentication Records",
+documents:["Aadhaar"],
+charges:"Free",
+processingTime:"Instant",
+portal:"https://myaadhaar.uidai.gov.in"
+},
+
+{
+id:18,
+category:"Aadhaar",
+name:"Aadhaar FAQs",
+icon:"❓",
+description:"UIDAI Help & FAQ",
+documents:["None"],
+charges:"Free",
+processingTime:"Instant",
+portal:"https://uidai.gov.in"
+},
+
+{
+id:19,
+category:"Aadhaar",
+name:"UIDAI Help Center",
+icon:"☎️",
+description:"Customer Support",
+documents:["None"],
+charges:"Free",
+processingTime:"Instant",
+portal:"https://uidai.gov.in"
+},
+
+{
+id:20,
+category:"Aadhaar",
+name:"UIDAI Grievance",
+icon:"📩",
+description:"Submit Aadhaar Complaint",
+documents:["Aadhaar"],
+charges:"Free",
+processingTime:"10 Minutes",
+portal:"https://uidai.gov.in"
+},
+{
+id:21,
+category:"PAN",
+name:"Protean PAN Home",
+icon:"💳",
+description:"Protean PAN Services",
+documents:["None"],
+charges:"Free",
+processingTime:"Instant",
+portal:"https://www.tinpan.proteantech.in"
+},
+
+{
+id:22,
+category:"PAN",
+name:"New PAN Apply",
+icon:"💳",
+description:"Apply New PAN Card",
+documents:["Aadhaar","Photo"],
+charges:"As Per Portal",
+processingTime:"Online",
+portal:"https://onlineservices.proteantech.in/paam/endUserRegisterContact.html"
+},
+
+{
+id:23,
+category:"PAN",
+name:"PAN Correction",
+icon:"✏️",
+description:"Correction in PAN Details",
+documents:["PAN","Supporting Documents"],
+charges:"As Per Portal",
+processingTime:"Online",
+portal:"https://onlineservices.proteantech.in/paam/endUserRegisterContact.html"
+},
+
+{
+id:24,
+category:"PAN",
+name:"e-PAN Download",
+icon:"⬇️",
+description:"Download e-PAN",
+documents:["PAN Number"],
+charges:"As Per Portal",
+processingTime:"Instant",
+portal:"https://www.onlineservices.proteantech.in/paam/requestAndDownloadEPAN.html"
+},
+
+{
+id:25,
+category:"PAN",
+name:"Track PAN Status",
+icon:"📋",
+description:"Track PAN Application",
+documents:["Acknowledgement Number"],
+charges:"Free",
+processingTime:"Instant",
+portal:"https://www.tinpan.proteantech.in"
+},
+
+{
+id:26,
+category:"PAN",
+name:"Reprint PAN Card",
+icon:"🪪",
+description:"Request PAN Reprint",
+documents:["PAN Number"],
+charges:"As Per Portal",
+processingTime:"Online",
+portal:"https://www.tinpan.proteantech.in"
+},
+
+{
+id:27,
+category:"PAN",
+name:"Verify PAN",
+icon:"✅",
+description:"Verify PAN Details",
+documents:["PAN Number"],
+charges:"Free",
+processingTime:"Instant",
+portal:"https://www.incometaxindia.gov.in/en/pan"
+},
+
+{
+id:28,
+category:"PAN",
+name:"Instant e-PAN",
+icon:"⚡",
+description:"Instant e-PAN Service",
+documents:["Aadhaar"],
+charges:"Free",
+processingTime:"Online",
+portal:"https://www.incometax.gov.in"
+},
+
+{
+id:29,
+category:"PAN",
+name:"PAN Aadhaar Link",
+icon:"🔗",
+description:"Link PAN with Aadhaar",
+documents:["PAN","Aadhaar"],
+charges:"As Per Rules",
+processingTime:"Instant",
+portal:"https://www.incometax.gov.in"
+},
+
+{
+id:30,
+category:"PAN",
+name:"Know AO",
+icon:"🏢",
+description:"Know Assessing Officer",
+documents:["PAN"],
+charges:"Free",
+processingTime:"Instant",
+portal:"https://www.incometax.gov.in"
+},
+
+{
+id:31,
+category:"PAN",
+name:"UTI PAN Home",
+icon:"💳",
+description:"UTIITSL PAN Services",
+documents:["None"],
+charges:"Free",
+processingTime:"Instant",
+portal:"https://www.pan.utiitsl.com"
+},
+
+{
+id:32,
+category:"PAN",
+name:"UTI New PAN",
+icon:"💳",
+description:"Apply PAN through UTIITSL",
+documents:["Aadhaar","Photo"],
+charges:"As Per Portal",
+processingTime:"Online",
+portal:"https://www.pan.utiitsl.com"
+},
+
+{
+id:33,
+category:"PAN",
+name:"UTI PAN Correction",
+icon:"✏️",
+description:"Update PAN Details",
+documents:["PAN"],
+charges:"As Per Portal",
+processingTime:"Online",
+portal:"https://www.pan.utiitsl.com"
+},
+
+{
+id:34,
+category:"PAN",
+name:"UTI PAN Status",
+icon:"📋",
+description:"Track PAN Status",
+documents:["Application Number"],
+charges:"Free",
+processingTime:"Instant",
+portal:"https://www.pan.utiitsl.com"
+},
+
+{
+id:35,
+category:"PAN",
+name:"UTI e-PAN",
+icon:"⬇️",
+description:"Download e-PAN",
+documents:["PAN"],
+charges:"As Per Portal",
+processingTime:"Instant",
+portal:"https://www.pan.utiitsl.com"
+},
+
+{
+id:36,
+category:"PAN",
+name:"PAN FAQs",
+icon:"❓",
+description:"PAN Help & FAQ",
+documents:["None"],
+charges:"Free",
+processingTime:"Instant",
+portal:"https://www.incometaxindia.gov.in/en/pan"
+},
+
+{
+id:37,
+category:"PAN",
+name:"PAN Centres",
+icon:"🏢",
+description:"Locate PAN Centre",
+documents:["None"],
+charges:"Free",
+processingTime:"Instant",
+portal:"https://www.tinpan.proteantech.in"
+},
+
+{
+id:38,
+category:"PAN",
+name:"PAN Forms",
+icon:"📄",
+description:"PAN Application Forms",
+documents:["None"],
+charges:"Free",
+processingTime:"Instant",
+portal:"https://www.incometaxindia.gov.in/en/pan"
+},
+
+{
+id:39,
+category:"PAN",
+name:"Know TAN",
+icon:"🧾",
+description:"TAN Services",
+documents:["TAN Details"],
+charges:"Free",
+processingTime:"Instant",
+portal:"https://www.tinpan.proteantech.in/services/tan/tan-downloads"
+},
+
+{
+id:40,
+category:"PAN",
+name:"PAN Help Desk",
+icon:"☎️",
+description:"PAN Support Information",
+documents:["None"],
+charges:"Free",
+processingTime:"Instant",
+portal:"https://www.tinpan.proteantech.in"
+},
+{
+id:41,
+category:"Voter",
+name:"Voter Services Portal",
+icon:"🗳️",
+description:"Official Voter Services Portal",
+documents:["EPIC (Optional)"],
+charges:"Free",
+processingTime:"Instant",
+portal:"https://voters.eci.gov.in"
+},
+
+{
+id:42,
+category:"Voter",
+name:"New Voter Registration",
+icon:"📝",
+description:"Apply for New Voter ID",
+documents:["Aadhaar","Photo"],
+charges:"Free",
+processingTime:"Online",
+portal:"https://voters.eci.gov.in"
+},
+
+{
+id:43,
+category:"Voter",
+name:"NRI Voter Registration",
+icon:"🌍",
+description:"Form 6A Registration",
+documents:["Passport"],
+charges:"Free",
+processingTime:"Online",
+portal:"https://voters.eci.gov.in"
+},
+
+{
+id:44,
+category:"Voter",
+name:"Voter Correction",
+icon:"✏️",
+description:"Correct Voter Details",
+documents:["EPIC"],
+charges:"Free",
+processingTime:"Online",
+portal:"https://voters.eci.gov.in"
+},
+
+{
+id:45,
+category:"Voter",
+name:"Delete Voter ID",
+icon:"❌",
+description:"Delete Name from Electoral Roll",
+documents:["EPIC"],
+charges:"Free",
+processingTime:"Online",
+portal:"https://voters.eci.gov.in"
+},
+
+{
+id:46,
+category:"Voter",
+name:"Shift Voter ID",
+icon:"🏠",
+description:"Change Address / Constituency",
+documents:["EPIC","Address Proof"],
+charges:"Free",
+processingTime:"Online",
+portal:"https://voters.eci.gov.in"
+},
+
+{
+id:47,
+category:"Voter",
+name:"Track Application",
+icon:"📋",
+description:"Track Voter Application Status",
+documents:["Reference Number"],
+charges:"Free",
+processingTime:"Instant",
+portal:"https://voters.eci.gov.in"
+},
+
+{
+id:48,
+category:"Voter",
+name:"Search Voter",
+icon:"🔍",
+description:"Search Name in Voter List",
+documents:["EPIC or Details"],
+charges:"Free",
+processingTime:"Instant",
+portal:"https://voters.eci.gov.in"
+},
+
+{
+id:49,
+category:"Voter",
+name:"Download e-EPIC",
+icon:"⬇️",
+description:"Download Digital Voter ID",
+documents:["EPIC"],
+charges:"Free",
+processingTime:"Instant",
+portal:"https://voters.eci.gov.in"
+},
+
+{
+id:50,
+category:"Voter",
+name:"Download Electoral Roll",
+icon:"📄",
+description:"Download Voter List PDF",
+documents:["State"],
+charges:"Free",
+processingTime:"Instant",
+portal:"https://voters.eci.gov.in"
+},
+
+{
+id:51,
+category:"Voter",
+name:"Know Polling Booth",
+icon:"📍",
+description:"Find Polling Booth",
+documents:["EPIC"],
+charges:"Free",
+processingTime:"Instant",
+portal:"https://voters.eci.gov.in"
+},
+
+{
+id:52,
+category:"Voter",
+name:"Book Call with BLO",
+icon:"📞",
+description:"Book a Call with BLO",
+documents:["EPIC"],
+charges:"Free",
+processingTime:"Online",
+portal:"https://voters.eci.gov.in"
+},
+
+{
+id:53,
+category:"Voter",
+name:"Register Complaint",
+icon:"⚠️",
+description:"Election Complaint",
+documents:["Optional"],
+charges:"Free",
+processingTime:"Online",
+portal:"https://voters.eci.gov.in"
+},
+
+{
+id:54,
+category:"Voter",
+name:"Election Results",
+icon:"📊",
+description:"View Election Results",
+documents:["None"],
+charges:"Free",
+processingTime:"Instant",
+portal:"https://voters.eci.gov.in"
+},
+
+{
+id:55,
+category:"Voter",
+name:"Election Commission",
+icon:"🏛️",
+description:"Official ECI Website",
+documents:["None"],
+charges:"Free",
+processingTime:"Instant",
+portal:"https://www.eci.gov.in"
+},
+
+{
+id:56,
+category:"Voter",
+name:"Forms Download",
+icon:"📥",
+description:"Download Election Forms",
+documents:["None"],
+charges:"Free",
+processingTime:"Instant",
+portal:"https://voters.eci.gov.in"
+},
+
+{
+id:57,
+category:"Voter",
+name:"Overseas Elector",
+icon:"✈️",
+description:"Services for Overseas Electors",
+documents:["Passport"],
+charges:"Free",
+processingTime:"Online",
+portal:"https://voters.eci.gov.in"
+},
+
+{
+id:58,
+category:"Voter",
+name:"Service Voter",
+icon:"🪖",
+description:"Services for Armed Forces Voters",
+documents:["Service Details"],
+charges:"Free",
+processingTime:"Online",
+portal:"https://www.eci.gov.in"
+},
+
+{
+id:59,
+category:"Voter",
+name:"Voter Education",
+icon:"📚",
+description:"Election Awareness Resources",
+documents:["None"],
+charges:"Free",
+processingTime:"Instant",
+portal:"https://www.eci.gov.in"
+},
+
+{
+id:60,
+category:"Voter",
+name:"ECI Contact",
+icon:"☎️",
+description:"Election Commission Help",
+documents:["None"],
+charges:"Free",
+processingTime:"Instant",
+portal:"https://www.eci.gov.in"
+},
+{
+id:61,
+category:"Certificate",
+name:"UP eDistrict",
+icon:"📜",
+description:"Official UP eDistrict Portal",
+documents:["Aadhaar"],
+charges:"Free",
+processingTime:"Online",
+portal:"https://edistrict.up.gov.in"
+},
+
+{
+id:62,
+category:"Certificate",
+name:"Income Certificate",
+icon:"💰",
+description:"Apply Income Certificate",
+documents:["Aadhaar","Income Proof"],
+charges:"As Per Rules",
+processingTime:"Online",
+portal:"https://edistrict.up.gov.in"
+},
+
+{
+id:63,
+category:"Certificate",
+name:"Caste Certificate",
+icon:"📄",
+description:"Apply Caste Certificate",
+documents:["Aadhaar","Proof"],
+charges:"As Per Rules",
+processingTime:"Online",
+portal:"https://edistrict.up.gov.in"
+},
+
+{
+id:64,
+category:"Certificate",
+name:"Domicile Certificate",
+icon:"🏠",
+description:"Apply Domicile Certificate",
+documents:["Aadhaar","Residence Proof"],
+charges:"As Per Rules",
+processingTime:"Online",
+portal:"https://edistrict.up.gov.in"
+},
+
+{
+id:65,
+category:"Certificate",
+name:"EWS Certificate",
+icon:"📑",
+description:"Apply EWS Certificate",
+documents:["Aadhaar","Income Proof"],
+charges:"As Per Rules",
+processingTime:"Online",
+portal:"https://edistrict.up.gov.in"
+},
+
+{
+id:66,
+category:"Certificate",
+name:"Birth Certificate",
+icon:"👶",
+description:"Birth Certificate Services",
+documents:["Hospital Record"],
+charges:"As Per Rules",
+processingTime:"Online",
+portal:"https://crsorgi.gov.in"
+},
+
+{
+id:67,
+category:"Certificate",
+name:"Death Certificate",
+icon:"🕊️",
+description:"Death Certificate Services",
+documents:["Hospital Record"],
+charges:"As Per Rules",
+processingTime:"Online",
+portal:"https://crsorgi.gov.in"
+},
+
+{
+id:68,
+category:"Certificate",
+name:"Character Certificate",
+icon:"📝",
+description:"Character Certificate",
+documents:["Aadhaar"],
+charges:"As Per Rules",
+processingTime:"Online",
+portal:"https://edistrict.up.gov.in"
+},
+
+{
+id:69,
+category:"Certificate",
+name:"Residence Certificate",
+icon:"🏡",
+description:"Residence Certificate",
+documents:["Address Proof"],
+charges:"As Per Rules",
+processingTime:"Online",
+portal:"https://edistrict.up.gov.in"
+},
+
+{
+id:70,
+category:"Certificate",
+name:"Family Certificate",
+icon:"👨‍👩‍👧",
+description:"Family Certificate",
+documents:["Aadhaar"],
+charges:"As Per Rules",
+processingTime:"Online",
+portal:"https://edistrict.up.gov.in"
+},
+
+{
+id:71,
+category:"Certificate",
+name:"Marriage Certificate",
+icon:"💍",
+description:"Marriage Registration",
+documents:["Bride & Groom ID"],
+charges:"As Per Rules",
+processingTime:"Online",
+portal:"https://igrsup.gov.in"
+},
+
+{
+id:72,
+category:"Certificate",
+name:"Property Registration",
+icon:"🏘️",
+description:"Property Registration",
+documents:["Property Papers"],
+charges:"As Per Rules",
+processingTime:"Online",
+portal:"https://igrsup.gov.in"
+},
+
+{
+id:73,
+category:"Certificate",
+name:"Encumbrance Certificate",
+icon:"📋",
+description:"Property Encumbrance",
+documents:["Property Details"],
+charges:"As Per Rules",
+processingTime:"Online",
+portal:"https://igrsup.gov.in"
+},
+
+{
+id:74,
+category:"Certificate",
+name:"Stamp Duty",
+icon:"🏷️",
+description:"Stamp Duty Services",
+documents:["Property Details"],
+charges:"As Per Rules",
+processingTime:"Online",
+portal:"https://igrsup.gov.in"
+},
+
+{
+id:75,
+category:"Certificate",
+name:"Affidavit Services",
+icon:"⚖️",
+description:"Affidavit Related Services",
+documents:["ID Proof"],
+charges:"Varies",
+processingTime:"Online",
+portal:"https://edistrict.up.gov.in"
+},
+
+{
+id:76,
+category:"Certificate",
+name:"Legal Heir Certificate",
+icon:"👪",
+description:"Legal Heir Certificate",
+documents:["Death Certificate"],
+charges:"As Per Rules",
+processingTime:"Online",
+portal:"https://edistrict.up.gov.in"
+},
+
+{
+id:77,
+category:"Certificate",
+name:"Minority Certificate",
+icon:"📜",
+description:"Minority Certificate",
+documents:["Required Documents"],
+charges:"As Per Rules",
+processingTime:"Online",
+portal:"https://edistrict.up.gov.in"
+},
+
+{
+id:78,
+category:"Certificate",
+name:"Handicap Certificate",
+icon:"♿",
+description:"Disability Certificate",
+documents:["Medical Report"],
+charges:"Free",
+processingTime:"Online",
+portal:"https://swavlambancard.gov.in"
+},
+
+{
+id:79,
+category:"Certificate",
+name:"National Population Register",
+icon:"🏛️",
+description:"NPR Services",
+documents:["Aadhaar"],
+charges:"Free",
+processingTime:"Online",
+portal:"https://services.india.gov.in"
+},
+
+{
+id:80,
+category:"Certificate",
+name:"Certificate Verification",
+icon:"✅",
+description:"Verify Government Certificate",
+documents:["Certificate Number"],
+charges:"Free",
+processingTime:"Instant",
+portal:"https://services.india.gov.in"
+},
+{
+id:81,
+category:"CSC",
+name:"CSC Digital Seva",
+icon:"🌐",
+description:"CSC Digital Seva Portal",
+documents:["CSC ID"],
+charges:"Free",
+processingTime:"Instant",
+portal:"https://digitalseva.csc.gov.in"
+},
+
+{
+id:82,
+category:"CSC",
+name:"TEC Registration",
+icon:"🎓",
+description:"Telecentre Entrepreneur Course",
+documents:["Mobile Number"],
+charges:"As Per Portal",
+processingTime:"Online",
+portal:"https://www.cscentrepreneur.in"
+},
+
+{
+id:83,
+category:"CSC",
+name:"CSC Academy",
+icon:"📘",
+description:"CSC Academy Services",
+documents:["CSC ID"],
+charges:"Free",
+processingTime:"Instant",
+portal:"https://cscacademy.org"
+},
+
+{
+id:84,
+category:"CSC",
+name:"Tele Law",
+icon:"⚖️",
+description:"Free Legal Advice",
+documents:["Aadhaar"],
+charges:"Free",
+processingTime:"Online",
+portal:"https://tele-law.in"
+},
+
+{
+id:85,
+category:"CSC",
+name:"PMGDISHA",
+icon:"💻",
+description:"Digital Literacy Mission",
+documents:["Aadhaar"],
+charges:"Free",
+processingTime:"Online",
+portal:"https://www.pmgdisha.in"
+},
+
+{
+id:86,
+category:"CSC",
+name:"RAP Registration",
+icon:"🛡️",
+description:"Rural Authorized Person",
+documents:["CSC ID"],
+charges:"As Per Portal",
+processingTime:"Online",
+portal:"https://digitalseva.csc.gov.in"
+},
+
+{
+id:87,
+category:"CSC",
+name:"CSC Login",
+icon:"🔑",
+description:"CSC VLE Login",
+documents:["CSC ID"],
+charges:"Free",
+processingTime:"Instant",
+portal:"https://digitalseva.csc.gov.in"
+},
+
+{
+id:88,
+category:"CSC",
+name:"CSC Locator",
+icon:"📍",
+description:"Find CSC Center",
+documents:["None"],
+charges:"Free",
+processingTime:"Instant",
+portal:"https://findmycsc.nic.in"
+},
+
+{
+id:89,
+category:"NSDL",
+name:"NSDL Official",
+icon:"🏦",
+description:"NSDL Official Website",
+documents:["None"],
+charges:"Free",
+processingTime:"Instant",
+portal:"https://nsdl.co.in"
+},
+
+{
+id:90,
+category:"NSDL",
+name:"NSDL Payments Bank",
+icon:"🏦",
+description:"NSDL Payments Bank",
+documents:["Account"],
+charges:"Free",
+processingTime:"Instant",
+portal:"https://nsdlbank.co.in"
+},
+
+{
+id:91,
+category:"Spice Money",
+name:"Spice Money",
+icon:"💸",
+description:"Spice Money Portal",
+documents:["Retailer ID"],
+charges:"As Per Portal",
+processingTime:"Instant",
+portal:"https://b2b.spicemoney.com"
+},
+
+{
+id:92,
+category:"Airtel",
+name:"Airtel Payments Bank",
+icon:"📱",
+description:"Airtel Payments Bank",
+documents:["Mobile Number"],
+charges:"Free",
+processingTime:"Instant",
+portal:"https://www.airtel.in/bank"
+},
+
+{
+id:93,
+category:"Banking",
+name:"PayNearby",
+icon:"💰",
+description:"PayNearby Partner Portal",
+documents:["Partner ID"],
+charges:"As Per Portal",
+processingTime:"Instant",
+portal:"https://paynearby.in"
+},
+
+{
+id:94,
+category:"Banking",
+name:"Fino Payments Bank",
+icon:"🏦",
+description:"Fino Bank",
+documents:["Account"],
+charges:"Free",
+processingTime:"Instant",
+portal:"https://www.finobank.com"
+},
+
+{
+id:95,
+category:"Banking",
+name:"India Post Payments Bank",
+icon:"📮",
+description:"IPPB Official",
+documents:["Account"],
+charges:"Free",
+processingTime:"Instant",
+portal:"https://www.ippbonline.com"
+},
+
+{
+id:96,
+category:"Banking",
+name:"Bank of Baroda",
+icon:"🏦",
+description:"BOB Official",
+documents:["Account"],
+charges:"Free",
+processingTime:"Instant",
+portal:"https://www.bankofbaroda.in"
+},
+
+{
+id:97,
+category:"Banking",
+name:"State Bank of India",
+icon:"🏦",
+description:"SBI Official",
+documents:["Account"],
+charges:"Free",
+processingTime:"Instant",
+portal:"https://sbi.co.in"
+},
+
+{
+id:98,
+category:"Banking",
+name:"Punjab National Bank",
+icon:"🏦",
+description:"PNB Official",
+documents:["Account"],
+charges:"Free",
+processingTime:"Instant",
+portal:"https://www.pnbindia.in"
+},
+
+{
+id:99,
+category:"Banking",
+name:"Canara Bank",
+icon:"🏦",
+description:"Canara Bank Official",
+documents:["Account"],
+charges:"Free",
+processingTime:"Instant",
+portal:"https://canarabank.com"
+},
+
+{
+id:100,
+category:"Banking",
+name:"Union Bank of India",
+icon:"🏦",
+description:"Union Bank Official",
+documents:["Account"],
+charges:"Free",
+processingTime:"Instant",
+portal:"https://www.unionbankofindia.co.in"
+},
+{
+id:101,
+category:"Farmer",
+name:"PM Kisan Portal",
+icon:"🌾",
+description:"Official PM Kisan Portal",
+documents:["Aadhaar"],
+charges:"Free",
+processingTime:"Instant",
+portal:"https://pmkisan.gov.in"
+},
+
+{
+id:102,
+category:"Farmer",
+name:"New Farmer Registration",
+icon:"📝",
+description:"Register New Farmer",
+documents:["Aadhaar","Land Record"],
+charges:"Free",
+processingTime:"10 Minutes",
+portal:"https://pmkisan.gov.in"
+},
+
+{
+id:103,
+category:"Farmer",
+name:"Farmer Status",
+icon:"📋",
+description:"Check PM Kisan Status",
+documents:["Registration Number"],
+charges:"Free",
+processingTime:"Instant",
+portal:"https://pmkisan.gov.in"
+},
+
+{
+id:104,
+category:"Farmer",
+name:"PM Kisan eKYC",
+icon:"✅",
+description:"Complete eKYC",
+documents:["Aadhaar"],
+charges:"Free",
+processingTime:"5 Minutes",
+portal:"https://pmkisan.gov.in"
+},
+
+{
+id:105,
+category:"Farmer",
+name:"Beneficiary List",
+icon:"📄",
+description:"View PM Kisan Beneficiary List",
+documents:["State","District"],
+charges:"Free",
+processingTime:"Instant",
+portal:"https://pmkisan.gov.in"
+},
+
+{
+id:106,
+category:"Farmer",
+name:"Edit Farmer Details",
+icon:"✏️",
+description:"Update Self Registration",
+documents:["Registration Number"],
+charges:"Free",
+processingTime:"10 Minutes",
+portal:"https://pmkisan.gov.in"
+},
+
+{
+id:107,
+category:"Farmer",
+name:"Update Mobile Number",
+icon:"📱",
+description:"Update Registered Mobile",
+documents:["Aadhaar"],
+charges:"Free",
+processingTime:"5 Minutes",
+portal:"https://pmkisan.gov.in"
+},
+
+{
+id:108,
+category:"Farmer",
+name:"Online Refund",
+icon:"💰",
+description:"PM Kisan Refund Service",
+documents:["Registration Number"],
+charges:"Free",
+processingTime:"Instant",
+portal:"https://pmkisan.gov.in"
+},
+
+{
+id:109,
+category:"Farmer",
+name:"KCC Form",
+icon:"🏦",
+description:"Download Kisan Credit Card Form",
+documents:["Aadhaar"],
+charges:"Free",
+processingTime:"Instant",
+portal:"https://pmkisan.gov.in"
+},
+
+{
+id:110,
+category:"Farmer",
+name:"PM Kisan Helpdesk",
+icon:"☎️",
+description:"PM Kisan Helpdesk",
+documents:["Registration Number"],
+charges:"Free",
+processingTime:"Instant",
+portal:"https://pmkisan.gov.in"
+},
+
+{
+id:111,
+category:"Agriculture",
+name:"AgriStack",
+icon:"🌱",
+description:"Digital Agriculture Platform",
+documents:["Farmer ID"],
+charges:"Free",
+processingTime:"Instant",
+portal:"https://agristack.gov.in"
+},
+
+{
+id:112,
+category:"Agriculture",
+name:"Farmer Registry",
+icon:"👨‍🌾",
+description:"Farmer Registry Portal",
+documents:["Aadhaar","Land Record"],
+charges:"Free",
+processingTime:"10 Minutes",
+portal:"https://agristack.gov.in"
+},
+
+{
+id:113,
+category:"Agriculture",
+name:"eNAM",
+icon:"🛒",
+description:"National Agriculture Market",
+documents:["Farmer ID"],
+charges:"Free",
+processingTime:"Instant",
+portal:"https://enam.gov.in"
+},
+
+{
+id:114,
+category:"Agriculture",
+name:"Soil Health Card",
+icon:"🧪",
+description:"Soil Health Card Services",
+documents:["Land Details"],
+charges:"Free",
+processingTime:"Online",
+portal:"https://soilhealth.dac.gov.in"
+},
+
+{
+id:115,
+category:"Agriculture",
+name:"Kisan Suvidha",
+icon:"📲",
+description:"Farmer Information Services",
+documents:["None"],
+charges:"Free",
+processingTime:"Instant",
+portal:"https://mkisan.gov.in"
+},
+
+{
+id:116,
+category:"Agriculture",
+name:"mKisan",
+icon:"📩",
+description:"SMS Advisory for Farmers",
+documents:["Mobile Number"],
+charges:"Free",
+processingTime:"Instant",
+portal:"https://mkisan.gov.in"
+},
+
+{
+id:117,
+category:"Agriculture",
+name:"PMFBY",
+icon:"🌦️",
+description:"Crop Insurance Portal",
+documents:["Aadhaar","Land Record"],
+charges:"As Per Scheme",
+processingTime:"Online",
+portal:"https://pmfby.gov.in"
+},
+
+{
+id:118,
+category:"Agriculture",
+name:"Agricultural Services",
+icon:"🚜",
+description:"National Agriculture Services",
+documents:["None"],
+charges:"Free",
+processingTime:"Instant",
+portal:"https://services.india.gov.in"
+},
+
+{
+id:119,
+category:"Agriculture",
+name:"Soil Card Print",
+icon:"🖨️",
+description:"Print Soil Health Card",
+documents:["Soil Card Number"],
+charges:"Free",
+processingTime:"Instant",
+portal:"https://services.india.gov.in"
+},
+
+{
+id:120,
+category:"Agriculture",
+name:"Farmer Services",
+icon:"🌾",
+description:"Government Agriculture Services",
+documents:["None"],
+charges:"Free",
+processingTime:"Instant",
+portal:"https://services.india.gov.in"
+},
+{
+id:121,
+category:"Labour",
+name:"e-Shram Portal",
+icon:"👷",
+description:"Official e-Shram Portal",
+documents:["Aadhaar","Mobile Number"],
+charges:"Free",
+processingTime:"Instant",
+portal:"https://eshram.gov.in"
+},
+
+{
+id:122,
+category:"Labour",
+name:"e-Shram Registration",
+icon:"📝",
+description:"Register Unorganized Worker",
+documents:["Aadhaar","Bank Passbook"],
+charges:"Free",
+processingTime:"10 Minutes",
+portal:"https://eshram.gov.in"
+},
+
+{
+id:123,
+category:"Labour",
+name:"e-Shram Login",
+icon:"🔑",
+description:"Login to e-Shram Portal",
+documents:["Registered Mobile"],
+charges:"Free",
+processingTime:"Instant",
+portal:"https://eshram.gov.in"
+},
+
+{
+id:124,
+category:"Labour",
+name:"Update e-Shram Profile",
+icon:"✏️",
+description:"Update Worker Profile",
+documents:["Aadhaar"],
+charges:"Free",
+processingTime:"10 Minutes",
+portal:"https://eshram.gov.in"
+},
+
+{
+id:125,
+category:"Labour",
+name:"Update Occupation",
+icon:"👷",
+description:"Update Occupation Details",
+documents:["e-Shram Number"],
+charges:"Free",
+processingTime:"5 Minutes",
+portal:"https://eshram.gov.in"
+},
+
+{
+id:126,
+category:"Labour",
+name:"Download e-Shram Card",
+icon:"⬇️",
+description:"Download UAN Card",
+documents:["UAN Number"],
+charges:"Free",
+processingTime:"Instant",
+portal:"https://eshram.gov.in"
+},
+
+{
+id:127,
+category:"Labour",
+name:"Print e-Shram Card",
+icon:"🖨️",
+description:"Print Registered Card",
+documents:["UAN Number"],
+charges:"₹20",
+processingTime:"5 Minutes",
+portal:"https://eshram.gov.in"
+},
+
+{
+id:128,
+category:"Labour",
+name:"e-Shram Helpdesk",
+icon:"☎️",
+description:"Official Helpdesk",
+documents:["UAN Number"],
+charges:"Free",
+processingTime:"Instant",
+portal:"https://eshram.gov.in/helpdesk"
+},
+
+{
+id:129,
+category:"Labour",
+name:"e-Shram Grievance",
+icon:"📩",
+description:"Submit Complaint",
+documents:["UAN Number"],
+charges:"Free",
+processingTime:"10 Minutes",
+portal:"https://gms.eshram.gov.in"
+},
+
+{
+id:130,
+category:"Labour",
+name:"Social Security Schemes",
+icon:"🛡️",
+description:"Labour Welfare Schemes",
+documents:["Aadhaar"],
+charges:"Free",
+processingTime:"Online",
+portal:"https://eshram.gov.in"
+},
+
+{
+id:131,
+category:"Labour",
+name:"National Career Service",
+icon:"💼",
+description:"Government Job Portal",
+documents:["Aadhaar"],
+charges:"Free",
+processingTime:"Instant",
+portal:"https://www.ncs.gov.in"
+},
+
+{
+id:132,
+category:"Labour",
+name:"PM Shram Yogi Maandhan",
+icon:"👴",
+description:"Pension Scheme",
+documents:["Aadhaar","Bank Account"],
+charges:"Free",
+processingTime:"15 Minutes",
+portal:"https://maandhan.in"
+},
+
+{
+id:133,
+category:"Labour",
+name:"EPFO",
+icon:"🏢",
+description:"Employees Provident Fund",
+documents:["UAN Number"],
+charges:"Free",
+processingTime:"Instant",
+portal:"https://www.epfindia.gov.in"
+},
+
+{
+id:134,
+category:"Labour",
+name:"ESIC",
+icon:"🏥",
+description:"Employees State Insurance",
+documents:["Insurance Number"],
+charges:"Free",
+processingTime:"Instant",
+portal:"https://www.esic.gov.in"
+},
+
+{
+id:135,
+category:"Labour",
+name:"Ministry of Labour",
+icon:"🏛️",
+description:"Official Labour Ministry",
+documents:["None"],
+charges:"Free",
+processingTime:"Instant",
+portal:"https://labour.gov.in"
+},
+
+{
+id:136,
+category:"Labour",
+name:"Building Workers",
+icon:"🏗️",
+description:"Construction Worker Services",
+documents:["Worker ID"],
+charges:"As Per Scheme",
+processingTime:"Online",
+portal:"https://labour.gov.in"
+},
+
+{
+id:137,
+category:"Labour",
+name:"Gig Worker Registration",
+icon:"🛵",
+description:"Platform Worker Registration",
+documents:["Aadhaar"],
+charges:"Free",
+processingTime:"Online",
+portal:"https://eshram.gov.in"
+},
+
+{
+id:138,
+category:"Labour",
+name:"Employment Schemes",
+icon:"📋",
+description:"Government Employment Schemes",
+documents:["Aadhaar"],
+charges:"Free",
+processingTime:"Online",
+portal:"https://eshram.gov.in"
+},
+
+{
+id:139,
+category:"Labour",
+name:"Skill India",
+icon:"🎓",
+description:"Skill Development Portal",
+documents:["Aadhaar"],
+charges:"Free",
+processingTime:"Online",
+portal:"https://www.skillindia.gov.in"
+},
+
+{
+id:140,
+category:"Labour",
+name:"Apprenticeship India",
+icon:"🛠️",
+description:"National Apprenticeship Portal",
+documents:["Aadhaar"],
+charges:"Free",
+processingTime:"Online",
+portal:"https://www.apprenticeshipindia.gov.in"
+},
+{
+id:141,
+category:"Health",
+name:"Ayushman Bharat",
+icon:"🏥",
+description:"Official Ayushman Bharat Portal",
+documents:["Aadhaar"],
+charges:"Free",
+processingTime:"Instant",
+portal:"https://beneficiary.nha.gov.in"
+},
+
+{
+id:142,
+category:"Health",
+name:"Ayushman Card Registration",
+icon:"📝",
+description:"Register for Ayushman Card",
+documents:["Aadhaar"],
+charges:"Free",
+processingTime:"10 Minutes",
+portal:"https://beneficiary.nha.gov.in"
+},
+
+{
+id:143,
+category:"Health",
+name:"Ayushman Card Download",
+icon:"⬇️",
+description:"Download Ayushman Card",
+documents:["Aadhaar"],
+charges:"Free",
+processingTime:"Instant",
+portal:"https://beneficiary.nha.gov.in"
+},
+
+{
+id:144,
+category:"Health",
+name:"Ayushman Beneficiary",
+icon:"👨‍👩‍👧",
+description:"Check Beneficiary Status",
+documents:["Aadhaar"],
+charges:"Free",
+processingTime:"Instant",
+portal:"https://beneficiary.nha.gov.in"
+},
+
+{
+id:145,
+category:"Health",
+name:"ABHA Health ID",
+icon:"🆔",
+description:"Create ABHA Health ID",
+documents:["Aadhaar"],
+charges:"Free",
+processingTime:"5 Minutes",
+portal:"https://abha.abdm.gov.in"
+},
+
+{
+id:146,
+category:"Health",
+name:"ABDM Portal",
+icon:"🏥",
+description:"Ayushman Bharat Digital Mission",
+documents:["None"],
+charges:"Free",
+processingTime:"Instant",
+portal:"https://abdm.gov.in"
+},
+
+{
+id:147,
+category:"Health",
+name:"CoWIN",
+icon:"💉",
+description:"Vaccination Services",
+documents:["Mobile Number"],
+charges:"Free",
+processingTime:"Instant",
+portal:"https://www.cowin.gov.in"
+},
+
+{
+id:148,
+category:"Health",
+name:"eHospital",
+icon:"🏨",
+description:"Online Hospital Services",
+documents:["Hospital ID"],
+charges:"Free",
+processingTime:"Online",
+portal:"https://ehospital.gov.in"
+},
+
+{
+id:149,
+category:"Health",
+name:"ORS Appointment",
+icon:"📅",
+description:"Book Hospital Appointment",
+documents:["Mobile Number"],
+charges:"Free",
+processingTime:"Instant",
+portal:"https://ors.gov.in"
+},
+
+{
+id:150,
+category:"Health",
+name:"Online Registration System",
+icon:"🏥",
+description:"Government Hospital Registration",
+documents:["Aadhaar"],
+charges:"Free",
+processingTime:"Instant",
+portal:"https://ors.gov.in"
+},
+
+{
+id:151,
+category:"Health",
+name:"National Health Portal",
+icon:"🌐",
+description:"Health Information Portal",
+documents:["None"],
+charges:"Free",
+processingTime:"Instant",
+portal:"https://www.nhp.gov.in"
+},
+
+{
+id:152,
+category:"Health",
+name:"Health Facility Search",
+icon:"🔍",
+description:"Find Hospitals",
+documents:["Location"],
+charges:"Free",
+processingTime:"Instant",
+portal:"https://abdm.gov.in"
+},
+
+{
+id:153,
+category:"Health",
+name:"Blood Bank",
+icon:"🩸",
+description:"National Blood Bank Services",
+documents:["None"],
+charges:"Free",
+processingTime:"Instant",
+portal:"https://eraktkosh.mohfw.gov.in"
+},
+
+{
+id:154,
+category:"Health",
+name:"Organ Donation",
+icon:"❤️",
+description:"NOTTO Services",
+documents:["Aadhaar"],
+charges:"Free",
+processingTime:"Online",
+portal:"https://notto.abdm.gov.in"
+},
+
+{
+id:155,
+category:"Health",
+name:"Jan Aushadhi",
+icon:"💊",
+description:"Locate Jan Aushadhi Kendra",
+documents:["None"],
+charges:"Free",
+processingTime:"Instant",
+portal:"https://janaushadhi.gov.in"
+},
+
+{
+id:156,
+category:"Health",
+name:"PMJAY Hospital Search",
+icon:"🏨",
+description:"Search PMJAY Hospital",
+documents:["Location"],
+charges:"Free",
+processingTime:"Instant",
+portal:"https://hospitals.pmjay.gov.in"
+},
+
+{
+id:157,
+category:"Health",
+name:"NHA Official",
+icon:"🏛️",
+description:"National Health Authority",
+documents:["None"],
+charges:"Free",
+processingTime:"Instant",
+portal:"https://nha.gov.in"
+},
+
+{
+id:158,
+category:"Health",
+name:"Health Claim Status",
+icon:"📋",
+description:"Check PMJAY Claim Status",
+documents:["Claim Number"],
+charges:"Free",
+processingTime:"Instant",
+portal:"https://beneficiary.nha.gov.in"
+},
+
+{
+id:159,
+category:"Health",
+name:"Medical Certificate",
+icon:"📄",
+description:"Government Medical Services",
+documents:["Medical Report"],
+charges:"As Per Rules",
+processingTime:"Online",
+portal:"https://ors.gov.in"
+},
+
+{
+id:160,
+category:"Health",
+name:"Health Helpline",
+icon:"☎️",
+description:"National Health Services",
+documents:["None"],
+charges:"Free",
+processingTime:"Instant",
+portal:"https://www.nhp.gov.in"
+},
+{
+id:161,
+category:"Pension",
+name:"Jeevan Pramaan",
+icon:"👴",
+description:"Digital Life Certificate",
+documents:["Aadhaar","PPO Number"],
+charges:"Free",
+processingTime:"10 Minutes",
+portal:"https://jeevanpramaan.gov.in"
+},
+
+{
+id:162,
+category:"Pension",
+name:"Digital Life Certificate",
+icon:"📄",
+description:"Generate Life Certificate",
+documents:["Aadhaar","PPO"],
+charges:"Free",
+processingTime:"10 Minutes",
+portal:"https://jeevanpramaan.gov.in"
+},
+
+{
+id:163,
+category:"Pension",
+name:"Atal Pension Yojana",
+icon:"🏦",
+description:"APY Official Portal",
+documents:["Bank Account","Aadhaar"],
+charges:"Free",
+processingTime:"Online",
+portal:"https://www.npscra.nsdl.co.in/scheme-details.php"
+},
+
+{
+id:164,
+category:"Pension",
+name:"National Pension System",
+icon:"💼",
+description:"NPS Official Portal",
+documents:["PRAN","Aadhaar"],
+charges:"Free",
+processingTime:"Instant",
+portal:"https://enps.nsdl.com"
+},
+
+{
+id:165,
+category:"Pension",
+name:"NPS Login",
+icon:"🔑",
+description:"Login to NPS Account",
+documents:["PRAN"],
+charges:"Free",
+processingTime:"Instant",
+portal:"https://enps.nsdl.com"
+},
+
+{
+id:166,
+category:"Pension",
+name:"PRAN Registration",
+icon:"🆔",
+description:"New PRAN Registration",
+documents:["Aadhaar","PAN"],
+charges:"As Per Rules",
+processingTime:"Online",
+portal:"https://enps.nsdl.com"
+},
+
+{
+id:167,
+category:"Pension",
+name:"Pensioners Portal",
+icon:"👴",
+description:"Central Pensioners Portal",
+documents:["PPO Number"],
+charges:"Free",
+processingTime:"Instant",
+portal:"https://pensionersportal.gov.in"
+},
+
+{
+id:168,
+category:"Pension",
+name:"CPENGRAMS",
+icon:"📩",
+description:"Pension Grievance Portal",
+documents:["PPO Number"],
+charges:"Free",
+processingTime:"Online",
+portal:"https://pgportal.gov.in"
+},
+
+{
+id:169,
+category:"Pension",
+name:"EPFO Pension",
+icon:"🏢",
+description:"Employees Pension Scheme",
+documents:["UAN"],
+charges:"Free",
+processingTime:"Online",
+portal:"https://www.epfindia.gov.in"
+},
+
+{
+id:170,
+category:"Pension",
+name:"ESIC Pension",
+icon:"🏥",
+description:"ESIC Pension Services",
+documents:["Insurance Number"],
+charges:"Free",
+processingTime:"Online",
+portal:"https://www.esic.gov.in"
+},
+
+{
+id:171,
+category:"Pension",
+name:"UP Pension Portal",
+icon:"🏛️",
+description:"UP Social Pension Portal",
+documents:["Aadhaar"],
+charges:"Free",
+processingTime:"Online",
+portal:"https://sspy-up.gov.in"
+},
+
+{
+id:172,
+category:"Pension",
+name:"Old Age Pension",
+icon:"👴",
+description:"Old Age Pension Scheme",
+documents:["Aadhaar","Income Certificate"],
+charges:"Free",
+processingTime:"Online",
+portal:"https://sspy-up.gov.in"
+},
+
+{
+id:173,
+category:"Pension",
+name:"Widow Pension",
+icon:"👩",
+description:"Widow Pension Scheme",
+documents:["Aadhaar","Death Certificate"],
+charges:"Free",
+processingTime:"Online",
+portal:"https://sspy-up.gov.in"
+},
+
+{
+id:174,
+category:"Pension",
+name:"Disability Pension",
+icon:"♿",
+description:"Disability Pension Scheme",
+documents:["Disability Certificate"],
+charges:"Free",
+processingTime:"Online",
+portal:"https://sspy-up.gov.in"
+},
+
+{
+id:175,
+category:"Pension",
+name:"Pension Status",
+icon:"📋",
+description:"Check Pension Status",
+documents:["Application Number"],
+charges:"Free",
+processingTime:"Instant",
+portal:"https://sspy-up.gov.in"
+},
+
+{
+id:176,
+category:"Pension",
+name:"Pension Beneficiary",
+icon:"👥",
+description:"Search Pension Beneficiary",
+documents:["Aadhaar"],
+charges:"Free",
+processingTime:"Instant",
+portal:"https://sspy-up.gov.in"
+},
+
+{
+id:177,
+category:"Pension",
+name:"Pension Payment Status",
+icon:"💰",
+description:"Check Pension Payment",
+documents:["PPO Number"],
+charges:"Free",
+processingTime:"Instant",
+portal:"https://sspy-up.gov.in"
+},
+
+{
+id:178,
+category:"Pension",
+name:"National Social Assistance",
+icon:"🏛️",
+description:"NSAP Official Portal",
+documents:["Aadhaar"],
+charges:"Free",
+processingTime:"Online",
+portal:"https://nsap.nic.in"
+},
+
+{
+id:179,
+category:"Pension",
+name:"Pension Helpline",
+icon:"☎️",
+description:"Official Pension Help",
+documents:["None"],
+charges:"Free",
+processingTime:"Instant",
+portal:"https://pensionersportal.gov.in"
+},
+
+{
+id:180,
+category:"Pension",
+name:"Pension Services",
+icon:"📑",
+description:"Government Pension Services",
+documents:["Aadhaar"],
+charges:"Free",
+processingTime:"Online",
+portal:"https://services.india.gov.in"
+},
+{
+id:181,
+category:"Passport",
+name:"Passport Seva",
+icon:"🛂",
+description:"Official Passport Seva Portal",
+documents:["Aadhaar","Photo"],
+charges:"As Per Rules",
+processingTime:"Online",
+portal:"https://www.passportindia.gov.in"
+},
+
+{
+id:182,
+category:"Passport",
+name:"New Passport Apply",
+icon:"📝",
+description:"Apply for New Passport",
+documents:["Aadhaar","Address Proof"],
+charges:"As Per Rules",
+processingTime:"30 Minutes",
+portal:"https://www.passportindia.gov.in"
+},
+
+{
+id:183,
+category:"Passport",
+name:"Passport Login",
+icon:"🔑",
+description:"Passport Seva Login",
+documents:["Registered Email"],
+charges:"Free",
+processingTime:"Instant",
+portal:"https://portal2.passportindia.gov.in"
+},
+
+{
+id:184,
+category:"Passport",
+name:"Track Application",
+icon:"📋",
+description:"Track Passport Status",
+documents:["File Number"],
+charges:"Free",
+processingTime:"Instant",
+portal:"https://www.passportindia.gov.in"
+},
+
+{
+id:185,
+category:"Passport",
+name:"Book Appointment",
+icon:"📅",
+description:"Book Passport Appointment",
+documents:["Application Number"],
+charges:"Free",
+processingTime:"10 Minutes",
+portal:"https://www.passportindia.gov.in"
+},
+
+{
+id:186,
+category:"Passport",
+name:"Reissue Passport",
+icon:"♻️",
+description:"Reissue Passport",
+documents:["Old Passport"],
+charges:"As Per Rules",
+processingTime:"30 Minutes",
+portal:"https://www.passportindia.gov.in"
+},
+
+{
+id:187,
+category:"Passport",
+name:"Police Clearance Certificate",
+icon:"🚔",
+description:"Apply for PCC",
+documents:["Passport"],
+charges:"As Per Rules",
+processingTime:"Online",
+portal:"https://www.passportindia.gov.in"
+},
+
+{
+id:188,
+category:"Passport",
+name:"Diplomatic Passport",
+icon:"🌍",
+description:"Diplomatic Passport Services",
+documents:["Official Documents"],
+charges:"As Per Rules",
+processingTime:"Online",
+portal:"https://www.passportindia.gov.in"
+},
+
+{
+id:189,
+category:"Passport",
+name:"Passport Fee Calculator",
+icon:"🧮",
+description:"Calculate Passport Fee",
+documents:["None"],
+charges:"Free",
+processingTime:"Instant",
+portal:"https://www.passportindia.gov.in"
+},
+
+{
+id:190,
+category:"Passport",
+name:"Locate PSK",
+icon:"📍",
+description:"Find Passport Seva Kendra",
+documents:["Location"],
+charges:"Free",
+processingTime:"Instant",
+portal:"https://www.passportindia.gov.in"
+},
+
+{
+id:191,
+category:"Passport",
+name:"Passport Forms",
+icon:"📄",
+description:"Download Passport Forms",
+documents:["None"],
+charges:"Free",
+processingTime:"Instant",
+portal:"https://www.passportindia.gov.in"
+},
+
+{
+id:192,
+category:"Passport",
+name:"Document Advisor",
+icon:"📑",
+description:"Required Documents Guide",
+documents:["None"],
+charges:"Free",
+processingTime:"Instant",
+portal:"https://www.passportindia.gov.in"
+},
+
+{
+id:193,
+category:"Passport",
+name:"Tatkal Passport",
+icon:"⚡",
+description:"Apply for Tatkal Passport",
+documents:["Required Documents"],
+charges:"As Per Rules",
+processingTime:"Online",
+portal:"https://www.passportindia.gov.in"
+},
+
+{
+id:194,
+category:"Passport",
+name:"Passport FAQ",
+icon:"❓",
+description:"Passport Frequently Asked Questions",
+documents:["None"],
+charges:"Free",
+processingTime:"Instant",
+portal:"https://www.passportindia.gov.in"
+},
+
+{
+id:195,
+category:"Passport",
+name:"Passport Grievance",
+icon:"📩",
+description:"Passport Complaint Portal",
+documents:["Application Number"],
+charges:"Free",
+processingTime:"Online",
+portal:"https://www.passportindia.gov.in"
+},
+
+{
+id:196,
+category:"Passport",
+name:"Passport Helpdesk",
+icon:"☎️",
+description:"Passport Support",
+documents:["None"],
+charges:"Free",
+processingTime:"Instant",
+portal:"https://www.passportindia.gov.in"
+},
+
+{
+id:197,
+category:"Passport",
+name:"MEA Official",
+icon:"🏛️",
+description:"Ministry of External Affairs",
+documents:["None"],
+charges:"Free",
+processingTime:"Instant",
+portal:"https://www.mea.gov.in"
+},
+
+{
+id:198,
+category:"Passport",
+name:"Passport News",
+icon:"📰",
+description:"Latest Passport Updates",
+documents:["None"],
+charges:"Free",
+processingTime:"Instant",
+portal:"https://www.passportindia.gov.in"
+},
+
+{
+id:199,
+category:"Passport",
+name:"Passport Service Guide",
+icon:"📘",
+description:"Passport User Guide",
+documents:["None"],
+charges:"Free",
+processingTime:"Instant",
+portal:"https://www.passportindia.gov.in"
+},
+
+{
+id:200,
+category:"Passport",
+name:"Passport Official Services",
+icon:"🛂",
+description:"All Passport Services",
+documents:["None"],
+charges:"Free",
+processingTime:"Instant",
+portal:"https://www.passportindia.gov.in"
+},
+{
+id:201,
+category:"Driving",
+name:"Parivahan Portal",
+icon:"🚘",
+description:"Official Parivahan Portal",
+documents:["Aadhaar"],
+charges:"Free",
+processingTime:"Instant",
+portal:"https://parivahan.gov.in"
+},
+
+{
+id:202,
+category:"Driving",
+name:"Sarathi Portal",
+icon:"🪪",
+description:"Driving Licence Services",
+documents:["Aadhaar"],
+charges:"Free",
+processingTime:"Instant",
+portal:"https://sarathi.parivahan.gov.in"
+},
+
+{
+id:203,
+category:"Driving",
+name:"VAHAN Portal",
+icon:"🚗",
+description:"Vehicle Registration Services",
+documents:["RC Number"],
+charges:"Free",
+processingTime:"Instant",
+portal:"https://vahan.parivahan.gov.in"
+},
+
+{
+id:204,
+category:"Driving",
+name:"Learning Licence",
+icon:"📖",
+description:"Apply Learning Licence",
+documents:["Aadhaar","Photo"],
+charges:"As Per Rules",
+processingTime:"30 Minutes",
+portal:"https://sarathi.parivahan.gov.in"
+},
+
+{
+id:205,
+category:"Driving",
+name:"Driving Licence Apply",
+icon:"🪪",
+description:"Apply Driving Licence",
+documents:["LL","Aadhaar"],
+charges:"As Per Rules",
+processingTime:"30 Minutes",
+portal:"https://sarathi.parivahan.gov.in"
+},
+
+{
+id:206,
+category:"Driving",
+name:"DL Renewal",
+icon:"♻️",
+description:"Renew Driving Licence",
+documents:["Driving Licence"],
+charges:"As Per Rules",
+processingTime:"30 Minutes",
+portal:"https://sarathi.parivahan.gov.in"
+},
+
+{
+id:207,
+category:"Driving",
+name:"Duplicate Driving Licence",
+icon:"📄",
+description:"Apply Duplicate DL",
+documents:["Driving Licence"],
+charges:"As Per Rules",
+processingTime:"20 Minutes",
+portal:"https://sarathi.parivahan.gov.in"
+},
+
+{
+id:208,
+category:"Driving",
+name:"DL Address Change",
+icon:"🏠",
+description:"Update Address in DL",
+documents:["Driving Licence","Address Proof"],
+charges:"As Per Rules",
+processingTime:"20 Minutes",
+portal:"https://sarathi.parivahan.gov.in"
+},
+
+{
+id:209,
+category:"Driving",
+name:"DL Status",
+icon:"📋",
+description:"Check Driving Licence Status",
+documents:["Application Number"],
+charges:"Free",
+processingTime:"Instant",
+portal:"https://sarathi.parivahan.gov.in"
+},
+
+{
+id:210,
+category:"Driving",
+name:"DL Slot Booking",
+icon:"📅",
+description:"Driving Test Slot Booking",
+documents:["Application Number"],
+charges:"Free",
+processingTime:"Instant",
+portal:"https://sarathi.parivahan.gov.in"
+},
+
+{
+id:211,
+category:"Vehicle",
+name:"RC Transfer",
+icon:"🔄",
+description:"Transfer Vehicle Ownership",
+documents:["RC","Insurance"],
+charges:"As Per Rules",
+processingTime:"30 Minutes",
+portal:"https://vahan.parivahan.gov.in"
+},
+
+{
+id:212,
+category:"Vehicle",
+name:"Duplicate RC",
+icon:"📄",
+description:"Apply Duplicate RC",
+documents:["RC Number"],
+charges:"As Per Rules",
+processingTime:"20 Minutes",
+portal:"https://vahan.parivahan.gov.in"
+},
+
+{
+id:213,
+category:"Vehicle",
+name:"RC Address Change",
+icon:"🏠",
+description:"Update RC Address",
+documents:["RC","Address Proof"],
+charges:"As Per Rules",
+processingTime:"20 Minutes",
+portal:"https://vahan.parivahan.gov.in"
+},
+
+{
+id:214,
+category:"Vehicle",
+name:"Vehicle Fitness",
+icon:"✅",
+description:"Fitness Certificate",
+documents:["RC"],
+charges:"As Per Rules",
+processingTime:"30 Minutes",
+portal:"https://vahan.parivahan.gov.in"
+},
+
+{
+id:215,
+category:"Vehicle",
+name:"Permit Services",
+icon:"🚛",
+description:"Commercial Vehicle Permit",
+documents:["RC"],
+charges:"As Per Rules",
+processingTime:"30 Minutes",
+portal:"https://vahan.parivahan.gov.in"
+},
+
+{
+id:216,
+category:"Vehicle",
+name:"Tax Payment",
+icon:"💰",
+description:"Vehicle Tax Payment",
+documents:["RC"],
+charges:"As Per Rules",
+processingTime:"Instant",
+portal:"https://vahan.parivahan.gov.in"
+},
+
+{
+id:217,
+category:"Vehicle",
+name:"e-Challan",
+icon:"🚨",
+description:"Traffic Challan Payment",
+documents:["Vehicle Number"],
+charges:"As Per Challan",
+processingTime:"Instant",
+portal:"https://echallan.parivahan.gov.in"
+},
+
+{
+id:218,
+category:"Vehicle",
+name:"Fancy Number",
+icon:"🔢",
+description:"Fancy Registration Number",
+documents:["Vehicle Details"],
+charges:"As Per Rules",
+processingTime:"Online",
+portal:"https://fancy.parivahan.gov.in"
+},
+
+{
+id:219,
+category:"Vehicle",
+name:"National Permit",
+icon:"🚚",
+description:"National Permit Services",
+documents:["Vehicle Details"],
+charges:"As Per Rules",
+processingTime:"Online",
+portal:"https://vahan.parivahan.gov.in"
+},
+
+{
+id:220,
+category:"Vehicle",
+name:"Vehicle Details",
+icon:"🚘",
+description:"Vehicle Information Services",
+documents:["Vehicle Number"],
+charges:"Free",
+processingTime:"Instant",
+portal:"https://vahan.parivahan.gov.in"
+},
+{
+id:221,
+category:"Railway",
+name:"IRCTC Official",
+icon:"🚆",
+description:"IRCTC Official Portal",
+documents:["IRCTC Login"],
+charges:"Free",
+processingTime:"Instant",
+portal:"https://www.irctc.co.in"
+},
+
+{
+id:222,
+category:"Railway",
+name:"Train Ticket Booking",
+icon:"🎫",
+description:"Book Railway Tickets",
+documents:["Passenger Details"],
+charges:"As Per IRCTC",
+processingTime:"5 Minutes",
+portal:"https://www.irctc.co.in"
+},
+
+{
+id:223,
+category:"Railway",
+name:"PNR Status",
+icon:"📋",
+description:"Check PNR Status",
+documents:["PNR Number"],
+charges:"Free",
+processingTime:"Instant",
+portal:"https://www.indianrail.gov.in"
+},
+
+{
+id:224,
+category:"Railway",
+name:"Live Train Status",
+icon:"🚄",
+description:"Track Live Train",
+documents:["Train Number"],
+charges:"Free",
+processingTime:"Instant",
+portal:"https://enquiry.indianrail.gov.in"
+},
+
+{
+id:225,
+category:"Railway",
+name:"Train Schedule",
+icon:"🕒",
+description:"Train Time Table",
+documents:["Train Number"],
+charges:"Free",
+processingTime:"Instant",
+portal:"https://enquiry.indianrail.gov.in"
+},
+
+{
+id:226,
+category:"Railway",
+name:"Train Between Stations",
+icon:"🛤️",
+description:"Search Train",
+documents:["Source & Destination"],
+charges:"Free",
+processingTime:"Instant",
+portal:"https://enquiry.indianrail.gov.in"
+},
+
+{
+id:227,
+category:"Railway",
+name:"Coach Position",
+icon:"🚉",
+description:"Find Coach Position",
+documents:["Train Number"],
+charges:"Free",
+processingTime:"Instant",
+portal:"https://enquiry.indianrail.gov.in"
+},
+
+{
+id:228,
+category:"Railway",
+name:"Seat Availability",
+icon:"💺",
+description:"Check Seat Availability",
+documents:["Train Number"],
+charges:"Free",
+processingTime:"Instant",
+portal:"https://www.irctc.co.in"
+},
+
+{
+id:229,
+category:"Railway",
+name:"Fare Enquiry",
+icon:"💰",
+description:"Train Fare Details",
+documents:["Train Number"],
+charges:"Free",
+processingTime:"Instant",
+portal:"https://enquiry.indianrail.gov.in"
+},
+
+{
+id:230,
+category:"Railway",
+name:"Cancelled Trains",
+icon:"❌",
+description:"Cancelled Train List",
+documents:["None"],
+charges:"Free",
+processingTime:"Instant",
+portal:"https://enquiry.indianrail.gov.in"
+},
+
+{
+id:231,
+category:"Railway",
+name:"Retiring Room",
+icon:"🏨",
+description:"Book Railway Retiring Room",
+documents:["PNR Number"],
+charges:"As Per Rules",
+processingTime:"5 Minutes",
+portal:"https://www.irctctourism.com"
+},
+
+{
+id:232,
+category:"Railway",
+name:"Railway Tourism",
+icon:"🧳",
+description:"IRCTC Tourism Packages",
+documents:["Passenger Details"],
+charges:"As Per Package",
+processingTime:"Online",
+portal:"https://www.irctctourism.com"
+},
+
+{
+id:233,
+category:"Railway",
+name:"Rail Madad",
+icon:"🛠️",
+description:"Railway Complaint Portal",
+documents:["PNR Number"],
+charges:"Free",
+processingTime:"Instant",
+portal:"https://railmadad.indianrailways.gov.in"
+},
+
+{
+id:234,
+category:"Railway",
+name:"UTS Mobile",
+icon:"📱",
+description:"Unreserved Ticket Booking",
+documents:["Mobile Number"],
+charges:"As Per Rules",
+processingTime:"Instant",
+portal:"https://www.utsonmobile.indianrail.gov.in"
+},
+
+{
+id:235,
+category:"Railway",
+name:"Rail Drishti",
+icon:"📊",
+description:"Railway Dashboard",
+documents:["None"],
+charges:"Free",
+processingTime:"Instant",
+portal:"https://raildrishti.indianrailways.gov.in"
+},
+
+{
+id:236,
+category:"Railway",
+name:"Freight Services",
+icon:"🚛",
+description:"Rail Freight Portal",
+documents:["Business Details"],
+charges:"As Per Rules",
+processingTime:"Online",
+portal:"https://www.fois.indianrail.gov.in"
+},
+
+{
+id:237,
+category:"Railway",
+name:"Railway Recruitment",
+icon:"💼",
+description:"Railway Jobs",
+documents:["Aadhaar"],
+charges:"Free",
+processingTime:"Online",
+portal:"https://www.rrbcdg.gov.in"
+},
+
+{
+id:238,
+category:"Railway",
+name:"Railway Parcel",
+icon:"📦",
+description:"Parcel Tracking",
+documents:["Parcel Number"],
+charges:"Free",
+processingTime:"Instant",
+portal:"https://parcel.indianrail.gov.in"
+},
+
+{
+id:239,
+category:"Railway",
+name:"Railway Help",
+icon:"☎️",
+description:"Railway Helpdesk",
+documents:["None"],
+charges:"Free",
+processingTime:"Instant",
+portal:"https://www.indianrail.gov.in"
+},
+
+{
+id:240,
+category:"Railway",
+name:"Indian Railways",
+icon:"🚆",
+description:"Official Indian Railways",
+documents:["None"],
+charges:"Free",
+processingTime:"Instant",
+portal:"https://indianrailways.gov.in"
+},
+{
+id:241,
+category:"Utility",
+name:"UPPCL",
+icon:"⚡",
+description:"Uttar Pradesh Power Corporation",
+documents:["Consumer Number"],
+charges:"As Per Bill",
+processingTime:"Instant",
+portal:"https://www.uppclonline.com"
+},
+
+{
+id:242,
+category:"Utility",
+name:"UPPCL Rural",
+icon:"⚡",
+description:"Rural Electricity Bill Payment",
+documents:["Consumer Number"],
+charges:"As Per Bill",
+processingTime:"Instant",
+portal:"https://www.uppclonline.com"
+},
+
+{
+id:243,
+category:"Utility",
+name:"Bharat BillPay",
+icon:"💳",
+description:"Official BBPS Portal",
+documents:["Consumer Number"],
+charges:"As Per Bill",
+processingTime:"Instant",
+portal:"https://www.bharatbillpay.com"
+},
+
+{
+id:244,
+category:"Utility",
+name:"BSNL",
+icon:"📞",
+description:"BSNL Services",
+documents:["Mobile Number"],
+charges:"As Per Plan",
+processingTime:"Instant",
+portal:"https://www.bsnl.co.in"
+},
+
+{
+id:245,
+category:"Utility",
+name:"Jio",
+icon:"📱",
+description:"Jio Official",
+documents:["Mobile Number"],
+charges:"As Per Plan",
+processingTime:"Instant",
+portal:"https://www.jio.com"
+},
+
+{
+id:246,
+category:"Utility",
+name:"Airtel",
+icon:"📶",
+description:"Airtel Official",
+documents:["Mobile Number"],
+charges:"As Per Plan",
+processingTime:"Instant",
+portal:"https://www.airtel.in"
+},
+
+{
+id:247,
+category:"Utility",
+name:"Vi",
+icon:"📡",
+description:"Vodafone Idea",
+documents:["Mobile Number"],
+charges:"As Per Plan",
+processingTime:"Instant",
+portal:"https://www.myvi.in"
+},
+
+{
+id:248,
+category:"Utility",
+name:"MTNL",
+icon:"☎️",
+description:"MTNL Services",
+documents:["Phone Number"],
+charges:"As Per Plan",
+processingTime:"Instant",
+portal:"https://www.mtnl.in"
+},
+
+{
+id:249,
+category:"Utility",
+name:"Indane Gas",
+icon:"🔥",
+description:"Indane LPG Services",
+documents:["Consumer Number"],
+charges:"As Per Bill",
+processingTime:"Instant",
+portal:"https://cx.indianoil.in"
+},
+
+{
+id:250,
+category:"Utility",
+name:"HP Gas",
+icon:"🔥",
+description:"HP Gas Services",
+documents:["Consumer Number"],
+charges:"As Per Bill",
+processingTime:"Instant",
+portal:"https://myhpgas.in"
+},
+
+{
+id:251,
+category:"Utility",
+name:"Bharat Gas",
+icon:"🔥",
+description:"Bharat Gas Services",
+documents:["Consumer Number"],
+charges:"As Per Bill",
+processingTime:"Instant",
+portal:"https://my.ebharatgas.com"
+},
+
+{
+id:252,
+category:"Utility",
+name:"FASTag",
+icon:"🚗",
+description:"FASTag Services",
+documents:["Vehicle Number"],
+charges:"As Per Recharge",
+processingTime:"Instant",
+portal:"https://www.npci.org.in/what-we-do/netc-fastag"
+},
+
+{
+id:253,
+category:"Utility",
+name:"NHAI",
+icon:"🛣️",
+description:"National Highways Authority",
+documents:["None"],
+charges:"Free",
+processingTime:"Instant",
+portal:"https://nhai.gov.in"
+},
+
+{
+id:254,
+category:"Utility",
+name:"FASTag Complaint",
+icon:"📩",
+description:"FASTag Support",
+documents:["FASTag ID"],
+charges:"Free",
+processingTime:"Instant",
+portal:"https://www.npci.org.in"
+},
+
+{
+id:255,
+category:"Utility",
+name:"India Post",
+icon:"📮",
+description:"India Post Official",
+documents:["Tracking Number"],
+charges:"As Per Service",
+processingTime:"Instant",
+portal:"https://www.indiapost.gov.in"
+},
+
+{
+id:256,
+category:"Utility",
+name:"Speed Post Tracking",
+icon:"📦",
+description:"Track Speed Post",
+documents:["Consignment Number"],
+charges:"Free",
+processingTime:"Instant",
+portal:"https://www.indiapost.gov.in"
+},
+
+{
+id:257,
+category:"Utility",
+name:"Post Office Savings",
+icon:"🏦",
+description:"Post Office Banking",
+documents:["Account Number"],
+charges:"Free",
+processingTime:"Instant",
+portal:"https://www.ippbonline.com"
+},
+
+{
+id:258,
+category:"Utility",
+name:"IPPB",
+icon:"🏦",
+description:"India Post Payments Bank",
+documents:["Account Number"],
+charges:"Free",
+processingTime:"Instant",
+portal:"https://www.ippbonline.com"
+},
+
+{
+id:259,
+category:"Utility",
+name:"Consumer Affairs",
+icon:"🛡️",
+description:"National Consumer Helpline",
+documents:["Complaint Details"],
+charges:"Free",
+processingTime:"Online",
+portal:"https://consumerhelpline.gov.in"
+},
+
+{
+id:260,
+category:"Utility",
+name:"National Portal",
+icon:"🇮🇳",
+description:"Government of India Portal",
+documents:["None"],
+charges:"Free",
+processingTime:"Instant",
+portal:"https://www.india.gov.in"
+},
+{
+id:261,
+category:"Education",
+name:"DigiLocker",
+icon:"📂",
+description:"Official DigiLocker Portal",
+documents:["Aadhaar","Mobile Number"],
+charges:"Free",
+processingTime:"Instant",
+portal:"https://www.digilocker.gov.in"
+},
+
+{
+id:262,
+category:"Education",
+name:"ABC ID",
+icon:"🆔",
+description:"Academic Bank of Credits",
+documents:["Aadhaar"],
+charges:"Free",
+processingTime:"Instant",
+portal:"https://www.abc.gov.in"
+},
+
+{
+id:263,
+category:"Education",
+name:"UMANG",
+icon:"📱",
+description:"UMANG Government Services",
+documents:["Mobile Number"],
+charges:"Free",
+processingTime:"Instant",
+portal:"https://web.umang.gov.in"
+},
+
+{
+id:264,
+category:"Education",
+name:"National Scholarship",
+icon:"🎓",
+description:"NSP Scholarship Portal",
+documents:["Aadhaar"],
+charges:"Free",
+processingTime:"Online",
+portal:"https://scholarships.gov.in"
+},
+
+{
+id:265,
+category:"Education",
+name:"NTA",
+icon:"📝",
+description:"National Testing Agency",
+documents:["Application Number"],
+charges:"Free",
+processingTime:"Instant",
+portal:"https://nta.ac.in"
+},
+
+{
+id:266,
+category:"Education",
+name:"CUET",
+icon:"📚",
+description:"CUET Official Portal",
+documents:["Application Number"],
+charges:"As Per Exam",
+processingTime:"Online",
+portal:"https://cuet.nta.nic.in"
+},
+
+{
+id:267,
+category:"Education",
+name:"JEE Main",
+icon:"📘",
+description:"JEE Main Portal",
+documents:["Application Number"],
+charges:"As Per Exam",
+processingTime:"Online",
+portal:"https://jeemain.nta.nic.in"
+},
+
+{
+id:268,
+category:"Education",
+name:"NEET UG",
+icon:"🩺",
+description:"NEET Official Portal",
+documents:["Application Number"],
+charges:"As Per Exam",
+processingTime:"Online",
+portal:"https://neet.nta.nic.in"
+},
+
+{
+id:269,
+category:"Education",
+name:"SWAYAM",
+icon:"💻",
+description:"Online Learning Platform",
+documents:["Email ID"],
+charges:"Free",
+processingTime:"Instant",
+portal:"https://swayam.gov.in"
+},
+
+{
+id:270,
+category:"Education",
+name:"SWAYAM PRABHA",
+icon:"📺",
+description:"Educational TV Channels",
+documents:["None"],
+charges:"Free",
+processingTime:"Instant",
+portal:"https://swayamprabha.gov.in"
+},
+
+{
+id:271,
+category:"Education",
+name:"NPTEL",
+icon:"🎥",
+description:"Engineering Online Courses",
+documents:["Email ID"],
+charges:"Free",
+processingTime:"Instant",
+portal:"https://nptel.ac.in"
+},
+
+{
+id:272,
+category:"Education",
+name:"ePathshala",
+icon:"📖",
+description:"NCERT Digital Books",
+documents:["None"],
+charges:"Free",
+processingTime:"Instant",
+portal:"https://epathshala.nic.in"
+},
+
+{
+id:273,
+category:"Education",
+name:"DIKSHA",
+icon:"🏫",
+description:"Teacher & Student Portal",
+documents:["Mobile Number"],
+charges:"Free",
+processingTime:"Instant",
+portal:"https://diksha.gov.in"
+},
+
+{
+id:274,
+category:"Education",
+name:"National Digital Library",
+icon:"📚",
+description:"Digital Library of India",
+documents:["Email ID"],
+charges:"Free",
+processingTime:"Instant",
+portal:"https://ndl.iitkgp.ac.in"
+},
+
+{
+id:275,
+category:"Education",
+name:"AISHE",
+icon:"🏛️",
+description:"Higher Education Survey",
+documents:["Institute Login"],
+charges:"Free",
+processingTime:"Online",
+portal:"https://aishe.gov.in"
+},
+
+{
+id:276,
+category:"Education",
+name:"AICTE",
+icon:"🏫",
+description:"AICTE Official Portal",
+documents:["Institute Details"],
+charges:"Free",
+processingTime:"Instant",
+portal:"https://www.aicte-india.org"
+},
+
+{
+id:277,
+category:"Education",
+name:"UGC",
+icon:"🎓",
+description:"University Grants Commission",
+documents:["None"],
+charges:"Free",
+processingTime:"Instant",
+portal:"https://www.ugc.gov.in"
+},
+
+{
+id:278,
+category:"Education",
+name:"CBSE",
+icon:"📑",
+description:"CBSE Official Portal",
+documents:["Roll Number"],
+charges:"Free",
+processingTime:"Instant",
+portal:"https://www.cbse.gov.in"
+},
+
+{
+id:279,
+category:"Education",
+name:"NCERT",
+icon:"📘",
+description:"NCERT Official Website",
+documents:["None"],
+charges:"Free",
+processingTime:"Instant",
+portal:"https://ncert.nic.in"
+},
+
+{
+id:280,
+category:"Education",
+name:"Education Services",
+icon:"🎓",
+description:"Government Education Services",
+documents:["None"],
+charges:"Free",
+processingTime:"Instant",
+portal:"https://services.india.gov.in"
+},
+{
+id:281,
+category:"Business",
+name:"GST Portal",
+icon:"🧾",
+description:"Official GST Portal",
+documents:["GSTIN"],
+charges:"Free",
+processingTime:"Instant",
+portal:"https://www.gst.gov.in"
+},
+
+{
+id:282,
+category:"Business",
+name:"GST Registration",
+icon:"📝",
+description:"Apply New GST Registration",
+documents:["PAN","Aadhaar"],
+charges:"As Per Rules",
+processingTime:"Online",
+portal:"https://www.gst.gov.in"
+},
+
+{
+id:283,
+category:"Business",
+name:"GST Login",
+icon:"🔑",
+description:"GST Taxpayer Login",
+documents:["GSTIN"],
+charges:"Free",
+processingTime:"Instant",
+portal:"https://www.gst.gov.in"
+},
+
+{
+id:284,
+category:"Business",
+name:"GST Return Filing",
+icon:"📑",
+description:"File GST Returns",
+documents:["GSTIN"],
+charges:"As Per Rules",
+processingTime:"Online",
+portal:"https://www.gst.gov.in"
+},
+
+{
+id:285,
+category:"Business",
+name:"GST Payment",
+icon:"💰",
+description:"Pay GST Tax",
+documents:["GSTIN"],
+charges:"As Per Tax",
+processingTime:"Instant",
+portal:"https://www.gst.gov.in"
+},
+
+{
+id:286,
+category:"Business",
+name:"GST Status",
+icon:"📋",
+description:"Track GST Application",
+documents:["ARN Number"],
+charges:"Free",
+processingTime:"Instant",
+portal:"https://www.gst.gov.in"
+},
+
+{
+id:287,
+category:"Business",
+name:"GST Search",
+icon:"🔍",
+description:"Search GSTIN",
+documents:["GST Number"],
+charges:"Free",
+processingTime:"Instant",
+portal:"https://www.gst.gov.in"
+},
+
+{
+id:288,
+category:"Business",
+name:"UDYAM Registration",
+icon:"🏭",
+description:"MSME Registration",
+documents:["Aadhaar","PAN"],
+charges:"Free",
+processingTime:"Online",
+portal:"https://udyamregistration.gov.in"
+},
+
+{
+id:289,
+category:"Business",
+name:"UDYAM Verify",
+icon:"✅",
+description:"Verify UDYAM Certificate",
+documents:["UDYAM Number"],
+charges:"Free",
+processingTime:"Instant",
+portal:"https://udyamregistration.gov.in"
+},
+
+{
+id:290,
+category:"Business",
+name:"UDYAM Update",
+icon:"✏️",
+description:"Update UDYAM Details",
+documents:["UDYAM Number"],
+charges:"Free",
+processingTime:"Online",
+portal:"https://udyamregistration.gov.in"
+},
+
+{
+id:291,
+category:"Business",
+name:"MSME Samadhaan",
+icon:"⚖️",
+description:"MSME Payment Complaint",
+documents:["UDYAM Number"],
+charges:"Free",
+processingTime:"Online",
+portal:"https://samadhaan.msme.gov.in"
+},
+
+{
+id:292,
+category:"Business",
+name:"MSME Sambandh",
+icon:"🤝",
+description:"MSME Procurement Portal",
+documents:["Business Details"],
+charges:"Free",
+processingTime:"Online",
+portal:"https://sambandh.msme.gov.in"
+},
+
+{
+id:293,
+category:"Business",
+name:"MSME Champions",
+icon:"🏆",
+description:"MSME Champions Portal",
+documents:["Business Details"],
+charges:"Free",
+processingTime:"Instant",
+portal:"https://champions.gov.in"
+},
+
+{
+id:294,
+category:"Business",
+name:"FSSAI FoSCoS",
+icon:"🍔",
+description:"Food License Services",
+documents:["Business Details"],
+charges:"As Per Rules",
+processingTime:"Online",
+portal:"https://foscos.fssai.gov.in"
+},
+
+{
+id:295,
+category:"Business",
+name:"FSSAI Registration",
+icon:"🍽️",
+description:"Food License Registration",
+documents:["Business Details"],
+charges:"As Per Rules",
+processingTime:"Online",
+portal:"https://foscos.fssai.gov.in"
+},
+
+{
+id:296,
+category:"Business",
+name:"FSSAI License Renewal",
+icon:"♻️",
+description:"Renew Food License",
+documents:["License Number"],
+charges:"As Per Rules",
+processingTime:"Online",
+portal:"https://foscos.fssai.gov.in"
+},
+
+{
+id:297,
+category:"Business",
+name:"GeM Portal",
+icon:"🛒",
+description:"Government e Marketplace",
+documents:["Business Details"],
+charges:"Free",
+processingTime:"Instant",
+portal:"https://gem.gov.in"
+},
+
+{
+id:298,
+category:"Business",
+name:"Startup India",
+icon:"🚀",
+description:"Startup India Portal",
+documents:["Business Details"],
+charges:"Free",
+processingTime:"Online",
+portal:"https://www.startupindia.gov.in"
+},
+
+{
+id:299,
+category:"Business",
+name:"MCA Services",
+icon:"🏢",
+description:"Ministry of Corporate Affairs",
+documents:["Company Details"],
+charges:"As Per Rules",
+processingTime:"Online",
+portal:"https://www.mca.gov.in"
+},
+
+{
+id:300,
+category:"Business",
+name:"Business Services",
+icon:"💼",
+description:"Government Business Services",
+documents:["Business Details"],
+charges:"Free",
+processingTime:"Instant",
+portal:"https://services.india.gov.in"
+},
+{
+id:301,
+category:"Jobs",
+name:"National Career Service",
+icon:"💼",
+description:"Official NCS Job Portal",
+documents:["Aadhaar"],
+charges:"Free",
+processingTime:"Instant",
+portal:"https://www.ncs.gov.in"
+},
+
+{
+id:302,
+category:"Jobs",
+name:"NCS Registration",
+icon:"📝",
+description:"Register as Job Seeker",
+documents:["Aadhaar","Mobile Number"],
+charges:"Free",
+processingTime:"10 Minutes",
+portal:"https://www.ncs.gov.in"
+},
+
+{
+id:303,
+category:"Jobs",
+name:"NCS Login",
+icon:"🔑",
+description:"Login to NCS Portal",
+documents:["Registered Mobile"],
+charges:"Free",
+processingTime:"Instant",
+portal:"https://www.ncs.gov.in"
+},
+
+{
+id:304,
+category:"Jobs",
+name:"Employment Exchange",
+icon:"🏢",
+description:"Employment Exchange Services",
+documents:["Aadhaar"],
+charges:"Free",
+processingTime:"Online",
+portal:"https://www.ncs.gov.in"
+},
+
+{
+id:305,
+category:"Jobs",
+name:"Apprenticeship India",
+icon:"🛠️",
+description:"National Apprenticeship Portal",
+documents:["Aadhaar"],
+charges:"Free",
+processingTime:"Online",
+portal:"https://www.apprenticeshipindia.gov.in"
+},
+
+{
+id:306,
+category:"Jobs",
+name:"Skill India",
+icon:"🎓",
+description:"Skill India Digital Portal",
+documents:["Aadhaar"],
+charges:"Free",
+processingTime:"Online",
+portal:"https://www.skillindia.gov.in"
+},
+
+{
+id:307,
+category:"Jobs",
+name:"PMKVY",
+icon:"📚",
+description:"Pradhan Mantri Kaushal Vikas Yojana",
+documents:["Aadhaar"],
+charges:"Free",
+processingTime:"Online",
+portal:"https://www.pmkvyofficial.org"
+},
+
+{
+id:308,
+category:"Jobs",
+name:"SSC",
+icon:"📑",
+description:"Staff Selection Commission",
+documents:["Registration Number"],
+charges:"As Per Exam",
+processingTime:"Online",
+portal:"https://ssc.gov.in"
+},
+
+{
+id:309,
+category:"Jobs",
+name:"UPSC",
+icon:"🏛️",
+description:"Union Public Service Commission",
+documents:["Registration Number"],
+charges:"As Per Exam",
+processingTime:"Online",
+portal:"https://upsc.gov.in"
+},
+
+{
+id:310,
+category:"Jobs",
+name:"Railway Recruitment",
+icon:"🚆",
+description:"Railway Recruitment Boards",
+documents:["Registration Number"],
+charges:"As Per Exam",
+processingTime:"Online",
+portal:"https://www.rrbcdg.gov.in"
+},
+
+{
+id:311,
+category:"Jobs",
+name:"IBPS",
+icon:"🏦",
+description:"Bank Recruitment",
+documents:["Registration Number"],
+charges:"As Per Exam",
+processingTime:"Online",
+portal:"https://www.ibps.in"
+},
+
+{
+id:312,
+category:"Jobs",
+name:"SBI Careers",
+icon:"🏦",
+description:"State Bank of India Recruitment",
+documents:["Registration Number"],
+charges:"Free",
+processingTime:"Online",
+portal:"https://sbi.co.in/web/careers"
+},
+
+{
+id:313,
+category:"Jobs",
+name:"Indian Army",
+icon:"🪖",
+description:"Join Indian Army",
+documents:["Aadhaar"],
+charges:"Free",
+processingTime:"Online",
+portal:"https://joinindianarmy.nic.in"
+},
+
+{
+id:314,
+category:"Jobs",
+name:"Indian Navy",
+icon:"⚓",
+description:"Join Indian Navy",
+documents:["Aadhaar"],
+charges:"Free",
+processingTime:"Online",
+portal:"https://www.joinindiannavy.gov.in"
+},
+
+{
+id:315,
+category:"Jobs",
+name:"Indian Air Force",
+icon:"✈️",
+description:"Agniveer & Air Force Recruitment",
+documents:["Aadhaar"],
+charges:"Free",
+processingTime:"Online",
+portal:"https://agnipathvayu.cdac.in"
+},
+
+{
+id:316,
+category:"Jobs",
+name:"Agnipath",
+icon:"🔥",
+description:"Agnipath Recruitment",
+documents:["Aadhaar"],
+charges:"Free",
+processingTime:"Online",
+portal:"https://agnipathvayu.cdac.in"
+},
+
+{
+id:317,
+category:"Jobs",
+name:"India Post GDS",
+icon:"📮",
+description:"Gramin Dak Sevak Recruitment",
+documents:["Registration Number"],
+charges:"As Per Rules",
+processingTime:"Online",
+portal:"https://indiapostgdsonline.gov.in"
+},
+
+{
+id:318,
+category:"Jobs",
+name:"Police Recruitment",
+icon:"👮",
+description:"Police Recruitment Services",
+documents:["Registration Number"],
+charges:"As Per Exam",
+processingTime:"Online",
+portal:"https://recruitment.upprpb.in"
+},
+
+{
+id:319,
+category:"Jobs",
+name:"Teaching Jobs",
+icon:"👨‍🏫",
+description:"Teacher Recruitment",
+documents:["Registration Number"],
+charges:"As Per Exam",
+processingTime:"Online",
+portal:"https://www.ncs.gov.in"
+},
+
+{
+id:320,
+category:"Jobs",
+name:"Government Jobs",
+icon:"📢",
+description:"Government Job Services",
+documents:["Aadhaar"],
+charges:"Free",
+processingTime:"Instant",
+portal:"https://services.india.gov.in"
+},
+{
+id:321,
+category:"Court",
+name:"eCourts",
+icon:"⚖️",
+description:"Official eCourts Services",
+documents:["Case Number"],
+charges:"Free",
+processingTime:"Instant",
+portal:"https://ecourts.gov.in"
+},
+
+{
+id:322,
+category:"Court",
+name:"Case Status",
+icon:"📋",
+description:"Check Court Case Status",
+documents:["Case Number"],
+charges:"Free",
+processingTime:"Instant",
+portal:"https://services.ecourts.gov.in"
+},
+
+{
+id:323,
+category:"Court",
+name:"Cause List",
+icon:"📄",
+description:"Daily Cause List",
+documents:["Court Name"],
+charges:"Free",
+processingTime:"Instant",
+portal:"https://services.ecourts.gov.in"
+},
+
+{
+id:324,
+category:"Court",
+name:"Court Orders",
+icon:"📑",
+description:"Download Court Orders",
+documents:["Case Number"],
+charges:"Free",
+processingTime:"Instant",
+portal:"https://services.ecourts.gov.in"
+},
+
+{
+id:325,
+category:"Court",
+name:"Judgment Search",
+icon:"🔍",
+description:"Search Court Judgments",
+documents:["Case Details"],
+charges:"Free",
+processingTime:"Instant",
+portal:"https://judgments.ecourts.gov.in"
+},
+
+{
+id:326,
+category:"Court",
+name:"High Court Allahabad",
+icon:"🏛️",
+description:"Allahabad High Court",
+documents:["Case Number"],
+charges:"Free",
+processingTime:"Instant",
+portal:"https://www.allahabadhighcourt.in"
+},
+
+{
+id:327,
+category:"Court",
+name:"Supreme Court",
+icon:"🏛️",
+description:"Supreme Court of India",
+documents:["Case Number"],
+charges:"Free",
+processingTime:"Instant",
+portal:"https://main.sci.gov.in"
+},
+
+{
+id:328,
+category:"Court",
+name:"National Judicial Data",
+icon:"📊",
+description:"NJDG Dashboard",
+documents:["None"],
+charges:"Free",
+processingTime:"Instant",
+portal:"https://njdg.ecourts.gov.in"
+},
+
+{
+id:329,
+category:"Court",
+name:"Court Fees",
+icon:"💰",
+description:"Court Fee Information",
+documents:["Case Details"],
+charges:"As Per Rules",
+processingTime:"Instant",
+portal:"https://ecourts.gov.in"
+},
+
+{
+id:330,
+category:"Court",
+name:"Court Services",
+icon:"⚖️",
+description:"Citizen Court Services",
+documents:["Case Number"],
+charges:"Free",
+processingTime:"Instant",
+portal:"https://services.ecourts.gov.in"
+},
+
+{
+id:331,
+category:"Police",
+name:"National Cyber Crime",
+icon:"🛡️",
+description:"Cyber Crime Reporting Portal",
+documents:["Complaint Details"],
+charges:"Free",
+processingTime:"Online",
+portal:"https://cybercrime.gov.in"
+},
+
+{
+id:332,
+category:"Police",
+name:"UP Police",
+icon:"👮",
+description:"UP Police Official Portal",
+documents:["None"],
+charges:"Free",
+processingTime:"Instant",
+portal:"https://uppolice.gov.in"
+},
+
+{
+id:333,
+category:"Police",
+name:"Police Verification",
+icon:"✅",
+description:"Police Verification Services",
+documents:["Aadhaar"],
+charges:"As Per Rules",
+processingTime:"Online",
+portal:"https://uppolice.gov.in"
+},
+
+{
+id:334,
+category:"Police",
+name:"Lost Report",
+icon:"📱",
+description:"Lost Document Report",
+documents:["ID Proof"],
+charges:"Free",
+processingTime:"Online",
+portal:"https://lostfound.delhipolice.gov.in"
+},
+
+{
+id:335,
+category:"Police",
+name:"Emergency Services",
+icon:"🚨",
+description:"National Emergency Portal",
+documents:["None"],
+charges:"Free",
+processingTime:"Instant",
+portal:"https://112.gov.in"
+},
+
+{
+id:336,
+category:"Police",
+name:"Passport Verification",
+icon:"🛂",
+description:"Passport Police Verification",
+documents:["Passport Number"],
+charges:"Free",
+processingTime:"Online",
+portal:"https://passportindia.gov.in"
+},
+
+{
+id:337,
+category:"Police",
+name:"Women Safety",
+icon:"👩",
+description:"Women Safety Services",
+documents:["None"],
+charges:"Free",
+processingTime:"Instant",
+portal:"https://112.gov.in"
+},
+
+{
+id:338,
+category:"Police",
+name:"Missing Person",
+icon:"🧍",
+description:"Missing Person Search",
+documents:["Photo"],
+charges:"Free",
+processingTime:"Online",
+portal:"https://trackthemissingchild.gov.in"
+},
+
+{
+id:339,
+category:"Police",
+name:"Crime Records",
+icon:"📋",
+description:"National Crime Records Bureau",
+documents:["None"],
+charges:"Free",
+processingTime:"Instant",
+portal:"https://ncrb.gov.in"
+},
+
+{
+id:340,
+category:"Police",
+name:"Police Citizen Services",
+icon:"👮",
+description:"Citizen Police Services",
+documents:["Aadhaar"],
+charges:"Free",
+processingTime:"Online",
+portal:"https://services.india.gov.in"
+},
+{
+id:341,
+category:"Digital",
+name:"DigiLocker",
+icon:"📂",
+description:"Official DigiLocker Portal",
+documents:["Aadhaar","Mobile Number"],
+charges:"Free",
+processingTime:"Instant",
+portal:"https://www.digilocker.gov.in"
+},
+
+{
+id:342,
+category:"Digital",
+name:"UMANG",
+icon:"📱",
+description:"Unified Mobile Application",
+documents:["Mobile Number"],
+charges:"Free",
+processingTime:"Instant",
+portal:"https://web.umang.gov.in"
+},
+
+{
+id:343,
+category:"Digital",
+name:"MyGov",
+icon:"🇮🇳",
+description:"Citizen Engagement Portal",
+documents:["Email ID"],
+charges:"Free",
+processingTime:"Instant",
+portal:"https://www.mygov.in"
+},
+
+{
+id:344,
+category:"Digital",
+name:"India Portal",
+icon:"🌐",
+description:"National Portal of India",
+documents:["None"],
+charges:"Free",
+processingTime:"Instant",
+portal:"https://www.india.gov.in"
+},
+
+{
+id:345,
+category:"Digital",
+name:"Service Plus",
+icon:"🛠️",
+description:"Government Online Services",
+documents:["Aadhaar"],
+charges:"Free",
+processingTime:"Instant",
+portal:"https://serviceonline.gov.in"
+},
+
+{
+id:346,
+category:"Digital",
+name:"Open Government Data",
+icon:"📊",
+description:"Government Data Portal",
+documents:["None"],
+charges:"Free",
+processingTime:"Instant",
+portal:"https://data.gov.in"
+},
+
+{
+id:347,
+category:"Digital",
+name:"RTI Online",
+icon:"📑",
+description:"Right to Information Portal",
+documents:["Applicant Details"],
+charges:"As Per Rules",
+processingTime:"Online",
+portal:"https://rtionline.gov.in"
+},
+
+{
+id:348,
+category:"Digital",
+name:"CPGRAMS",
+icon:"📩",
+description:"Public Grievance Portal",
+documents:["Mobile Number"],
+charges:"Free",
+processingTime:"Online",
+portal:"https://pgportal.gov.in"
+},
+
+{
+id:349,
+category:"Digital",
+name:"National Portal Login",
+icon:"🔑",
+description:"Government Login Services",
+documents:["Email"],
+charges:"Free",
+processingTime:"Instant",
+portal:"https://www.india.gov.in"
+},
+
+{
+id:350,
+category:"Digital",
+name:"Government Schemes",
+icon:"🏛️",
+description:"Central Government Schemes",
+documents:["Aadhaar"],
+charges:"Free",
+processingTime:"Instant",
+portal:"https://www.india.gov.in"
+},
+
+{
+id:351,
+category:"Digital",
+name:"PM India",
+icon:"🇮🇳",
+description:"Prime Minister's Office",
+documents:["None"],
+charges:"Free",
+processingTime:"Instant",
+portal:"https://www.pmindia.gov.in"
+},
+
+{
+id:352,
+category:"Digital",
+name:"National Informatics Centre",
+icon:"💻",
+description:"NIC Official Website",
+documents:["None"],
+charges:"Free",
+processingTime:"Instant",
+portal:"https://www.nic.in"
+},
+
+{
+id:353,
+category:"Digital",
+name:"GeM",
+icon:"🛒",
+description:"Government e Marketplace",
+documents:["Business Details"],
+charges:"Free",
+processingTime:"Online",
+portal:"https://gem.gov.in"
+},
+
+{
+id:354,
+category:"Digital",
+name:"Digital India",
+icon:"💠",
+description:"Digital India Mission",
+documents:["None"],
+charges:"Free",
+processingTime:"Instant",
+portal:"https://digitalindia.gov.in"
+},
+
+{
+id:355,
+category:"Digital",
+name:"National Single Window",
+icon:"🏢",
+description:"Business Single Window Portal",
+documents:["Business Details"],
+charges:"Free",
+processingTime:"Online",
+portal:"https://www.nsws.gov.in"
+},
+
+{
+id:356,
+category:"Digital",
+name:"Government eProcurement",
+icon:"📦",
+description:"Central Public Procurement",
+documents:["Vendor Details"],
+charges:"Free",
+processingTime:"Online",
+portal:"https://eprocure.gov.in"
+},
+
+{
+id:357,
+category:"Digital",
+name:"National Scholarship",
+icon:"🎓",
+description:"Scholarship Portal",
+documents:["Aadhaar"],
+charges:"Free",
+processingTime:"Online",
+portal:"https://scholarships.gov.in"
+},
+
+{
+id:358,
+category:"Digital",
+name:"Startup India",
+icon:"🚀",
+description:"Startup India Portal",
+documents:["Business Details"],
+charges:"Free",
+processingTime:"Online",
+portal:"https://www.startupindia.gov.in"
+},
+
+{
+id:359,
+category:"Digital",
+name:"Invest India",
+icon:"📈",
+description:"Investment Promotion Portal",
+documents:["Business Details"],
+charges:"Free",
+processingTime:"Instant",
+portal:"https://www.investindia.gov.in"
+},
+
+{
+id:360,
+category:"Digital",
+name:"National Services Portal",
+icon:"🖥️",
+description:"Government Online Services Directory",
+documents:["None"],
+charges:"Free",
+processingTime:"Instant",
+portal:"https://services.india.gov.in"
+},
+{
+id:361,
+category:"Travel",
+name:"IRCTC Tourism",
+icon:"🧳",
+description:"Official IRCTC Tourism",
+documents:["ID Proof"],
+charges:"As Per Package",
+processingTime:"Online",
+portal:"https://www.irctctourism.com"
+},
+
+{
+id:362,
+category:"Travel",
+name:"UPSRTC",
+icon:"🚌",
+description:"UP State Road Transport",
+documents:["Passenger Details"],
+charges:"As Per Ticket",
+processingTime:"Instant",
+portal:"https://www.upsrtc.com"
+},
+
+{
+id:363,
+category:"Travel",
+name:"RSRTC",
+icon:"🚌",
+description:"Rajasthan Roadways",
+documents:["Passenger Details"],
+charges:"As Per Ticket",
+processingTime:"Instant",
+portal:"https://rsrtconline.rajasthan.gov.in"
+},
+
+{
+id:364,
+category:"Travel",
+name:"RedBus",
+icon:"🚌",
+description:"Bus Ticket Booking",
+documents:["Passenger Details"],
+charges:"As Per Ticket",
+processingTime:"Instant",
+portal:"https://www.redbus.in"
+},
+
+{
+id:365,
+category:"Travel",
+name:"AbhiBus",
+icon:"🚌",
+description:"Online Bus Booking",
+documents:["Passenger Details"],
+charges:"As Per Ticket",
+processingTime:"Instant",
+portal:"https://www.abhibus.com"
+},
+
+{
+id:366,
+category:"Travel",
+name:"Air India",
+icon:"✈️",
+description:"Official Air India",
+documents:["Passenger Details"],
+charges:"As Per Ticket",
+processingTime:"Instant",
+portal:"https://www.airindia.com"
+},
+
+{
+id:367,
+category:"Travel",
+name:"IndiGo",
+icon:"✈️",
+description:"Official IndiGo Airlines",
+documents:["Passenger Details"],
+charges:"As Per Ticket",
+processingTime:"Instant",
+portal:"https://www.goindigo.in"
+},
+
+{
+id:368,
+category:"Travel",
+name:"SpiceJet",
+icon:"✈️",
+description:"Official SpiceJet",
+documents:["Passenger Details"],
+charges:"As Per Ticket",
+processingTime:"Instant",
+portal:"https://www.spicejet.com"
+},
+
+{
+id:369,
+category:"Travel",
+name:"Akasa Air",
+icon:"✈️",
+description:"Official Akasa Air",
+documents:["Passenger Details"],
+charges:"As Per Ticket",
+processingTime:"Instant",
+portal:"https://www.akasaair.com"
+},
+
+{
+id:370,
+category:"Travel",
+name:"Alliance Air",
+icon:"✈️",
+description:"Official Alliance Air",
+documents:["Passenger Details"],
+charges:"As Per Ticket",
+processingTime:"Instant",
+portal:"https://www.allianceair.in"
+},
+
+{
+id:371,
+category:"Travel",
+name:"MakeMyTrip",
+icon:"🏨",
+description:"Travel Booking",
+documents:["Passenger Details"],
+charges:"As Per Booking",
+processingTime:"Instant",
+portal:"https://www.makemytrip.com"
+},
+
+{
+id:372,
+category:"Travel",
+name:"Yatra",
+icon:"🧳",
+description:"Travel Booking",
+documents:["Passenger Details"],
+charges:"As Per Booking",
+processingTime:"Instant",
+portal:"https://www.yatra.com"
+},
+
+{
+id:373,
+category:"Travel",
+name:"EaseMyTrip",
+icon:"🎫",
+description:"Travel Booking",
+documents:["Passenger Details"],
+charges:"As Per Booking",
+processingTime:"Instant",
+portal:"https://www.easemytrip.com"
+},
+
+{
+id:374,
+category:"Travel",
+name:"Booking.com",
+icon:"🏨",
+description:"Hotel Booking",
+documents:["ID Proof"],
+charges:"As Per Booking",
+processingTime:"Instant",
+portal:"https://www.booking.com"
+},
+
+{
+id:375,
+category:"Travel",
+name:"Agoda",
+icon:"🏨",
+description:"Hotel Booking",
+documents:["ID Proof"],
+charges:"As Per Booking",
+processingTime:"Instant",
+portal:"https://www.agoda.com"
+},
+
+{
+id:376,
+category:"Travel",
+name:"OYO",
+icon:"🏨",
+description:"Hotel Booking",
+documents:["ID Proof"],
+charges:"As Per Booking",
+processingTime:"Instant",
+portal:"https://www.oyorooms.com"
+},
+
+{
+id:377,
+category:"Travel",
+name:"Goibibo",
+icon:"🧳",
+description:"Travel Booking",
+documents:["Passenger Details"],
+charges:"As Per Booking",
+processingTime:"Instant",
+portal:"https://www.goibibo.com"
+},
+
+{
+id:378,
+category:"Travel",
+name:"ixigo",
+icon:"🚆",
+description:"Train, Flight & Bus Booking",
+documents:["Passenger Details"],
+charges:"As Per Booking",
+processingTime:"Instant",
+portal:"https://www.ixigo.com"
+},
+
+{
+id:379,
+category:"Travel",
+name:"Cleartrip",
+icon:"✈️",
+description:"Travel Booking",
+documents:["Passenger Details"],
+charges:"As Per Booking",
+processingTime:"Instant",
+portal:"https://www.cleartrip.com"
+},
+
+{
+id:380,
+category:"Travel",
+name:"Travel Services",
+icon:"🌍",
+description:"Government Travel Services",
+documents:["ID Proof"],
+charges:"As Per Service",
+processingTime:"Online",
+portal:"https://services.india.gov.in"
+},
+{
+id:381,
+category:"Banking",
+name:"Reserve Bank of India",
+icon:"🏦",
+description:"Official RBI Portal",
+documents:["None"],
+charges:"Free",
+processingTime:"Instant",
+portal:"https://www.rbi.org.in"
+},
+
+{
+id:382,
+category:"Banking",
+name:"NPCI",
+icon:"💳",
+description:"National Payments Corporation of India",
+documents:["None"],
+charges:"Free",
+processingTime:"Instant",
+portal:"https://www.npci.org.in"
+},
+
+{
+id:383,
+category:"Banking",
+name:"State Bank of India",
+icon:"🏦",
+description:"SBI Official Website",
+documents:["Account Number"],
+charges:"Free",
+processingTime:"Instant",
+portal:"https://sbi.co.in"
+},
+
+{
+id:384,
+category:"Banking",
+name:"YONO SBI",
+icon:"📱",
+description:"SBI Digital Banking",
+documents:["Customer ID"],
+charges:"Free",
+processingTime:"Instant",
+portal:"https://www.sbiyono.sbi"
+},
+
+{
+id:385,
+category:"Banking",
+name:"Punjab National Bank",
+icon:"🏦",
+description:"PNB Official Website",
+documents:["Account Number"],
+charges:"Free",
+processingTime:"Instant",
+portal:"https://www.pnbindia.in"
+},
+
+{
+id:386,
+category:"Banking",
+name:"Bank of Baroda",
+icon:"🏦",
+description:"BOB Official Website",
+documents:["Account Number"],
+charges:"Free",
+processingTime:"Instant",
+portal:"https://www.bankofbaroda.in"
+},
+
+{
+id:387,
+category:"Banking",
+name:"Canara Bank",
+icon:"🏦",
+description:"Canara Bank Official",
+documents:["Account Number"],
+charges:"Free",
+processingTime:"Instant",
+portal:"https://canarabank.com"
+},
+
+{
+id:388,
+category:"Banking",
+name:"Union Bank of India",
+icon:"🏦",
+description:"Union Bank Official",
+documents:["Account Number"],
+charges:"Free",
+processingTime:"Instant",
+portal:"https://www.unionbankofindia.co.in"
+},
+
+{
+id:389,
+category:"Banking",
+name:"Bank of India",
+icon:"🏦",
+description:"BOI Official Website",
+documents:["Account Number"],
+charges:"Free",
+processingTime:"Instant",
+portal:"https://bankofindia.co.in"
+},
+
+{
+id:390,
+category:"Banking",
+name:"Central Bank of India",
+icon:"🏦",
+description:"Central Bank Official",
+documents:["Account Number"],
+charges:"Free",
+processingTime:"Instant",
+portal:"https://www.centralbankofindia.co.in"
+},
+
+{
+id:391,
+category:"Banking",
+name:"Indian Bank",
+icon:"🏦",
+description:"Indian Bank Official",
+documents:["Account Number"],
+charges:"Free",
+processingTime:"Instant",
+portal:"https://www.indianbank.in"
+},
+
+{
+id:392,
+category:"Banking",
+name:"Indian Overseas Bank",
+icon:"🏦",
+description:"IOB Official",
+documents:["Account Number"],
+charges:"Free",
+processingTime:"Instant",
+portal:"https://www.iob.in"
+},
+
+{
+id:393,
+category:"Banking",
+name:"UCO Bank",
+icon:"🏦",
+description:"UCO Bank Official",
+documents:["Account Number"],
+charges:"Free",
+processingTime:"Instant",
+portal:"https://www.ucobank.com"
+},
+
+{
+id:394,
+category:"Banking",
+name:"Punjab & Sind Bank",
+icon:"🏦",
+description:"PSB Official",
+documents:["Account Number"],
+charges:"Free",
+processingTime:"Instant",
+portal:"https://punjabandsindbank.co.in"
+},
+
+{
+id:395,
+category:"Banking",
+name:"Bank of Maharashtra",
+icon:"🏦",
+description:"BOM Official",
+documents:["Account Number"],
+charges:"Free",
+processingTime:"Instant",
+portal:"https://bankofmaharashtra.in"
+},
+
+{
+id:396,
+category:"Banking",
+name:"India Post Payments Bank",
+icon:"📮",
+description:"IPPB Official",
+documents:["Account Number"],
+charges:"Free",
+processingTime:"Instant",
+portal:"https://www.ippbonline.com"
+},
+
+{
+id:397,
+category:"Banking",
+name:"NSDL Payments Bank",
+icon:"🏦",
+description:"NSDL Payments Bank",
+documents:["Account Number"],
+charges:"Free",
+processingTime:"Instant",
+portal:"https://nsdlbank.co.in"
+},
+
+{
+id:398,
+category:"Banking",
+name:"Airtel Payments Bank",
+icon:"📱",
+description:"Airtel Payments Bank",
+documents:["Mobile Number"],
+charges:"Free",
+processingTime:"Instant",
+portal:"https://www.airtel.in/bank"
+},
+
+{
+id:399,
+category:"Banking",
+name:"Fino Payments Bank",
+icon:"🏦",
+description:"Fino Payments Bank",
+documents:["Account Number"],
+charges:"Free",
+processingTime:"Instant",
+portal:"https://www.finobank.com"
+},
+
+{
+id:400,
+category:"Banking",
+name:"PayNearby",
+icon:"💸",
+description:"PayNearby Partner Services",
+documents:["Partner ID"],
+charges:"Free",
+processingTime:"Instant",
+portal:"https://paynearby.in"
+},
+{
+id:401,
+category:"Insurance",
+name:"LIC India",
+icon:"🛡️",
+description:"Life Insurance Corporation",
+documents:["Policy Number"],
+charges:"As Per Policy",
+processingTime:"Instant",
+portal:"https://licindia.in"
+},
+
+{
+id:402,
+category:"Insurance",
+name:"LIC Premium Payment",
+icon:"💳",
+description:"Pay LIC Premium",
+documents:["Policy Number"],
+charges:"As Per Premium",
+processingTime:"Instant",
+portal:"https://licindia.in"
+},
+
+{
+id:403,
+category:"Insurance",
+name:"PMJJBY",
+icon:"❤️",
+description:"Pradhan Mantri Jeevan Jyoti Bima Yojana",
+documents:["Bank Account"],
+charges:"As Per Scheme",
+processingTime:"Online",
+portal:"https://jansuraksha.gov.in"
+},
+
+{
+id:404,
+category:"Insurance",
+name:"PMSBY",
+icon:"🛡️",
+description:"Pradhan Mantri Suraksha Bima Yojana",
+documents:["Bank Account"],
+charges:"As Per Scheme",
+processingTime:"Online",
+portal:"https://jansuraksha.gov.in"
+},
+
+{
+id:405,
+category:"Insurance",
+name:"Jan Suraksha",
+icon:"🏦",
+description:"Government Insurance Schemes",
+documents:["Aadhaar"],
+charges:"Free",
+processingTime:"Instant",
+portal:"https://jansuraksha.gov.in"
+},
+
+{
+id:406,
+category:"Insurance",
+name:"IRDAI",
+icon:"🏛️",
+description:"Insurance Regulatory Authority",
+documents:["None"],
+charges:"Free",
+processingTime:"Instant",
+portal:"https://irdai.gov.in"
+},
+
+{
+id:407,
+category:"Insurance",
+name:"PolicyBazaar",
+icon:"📋",
+description:"Insurance Comparison",
+documents:["Customer Details"],
+charges:"Free",
+processingTime:"Instant",
+portal:"https://www.policybazaar.com"
+},
+
+{
+id:408,
+category:"Insurance",
+name:"NPS Trust",
+icon:"👴",
+description:"National Pension Trust",
+documents:["PRAN"],
+charges:"Free",
+processingTime:"Instant",
+portal:"https://npstrust.org.in"
+},
+
+{
+id:409,
+category:"Insurance",
+name:"ABHA Health ID",
+icon:"🏥",
+description:"Health ID Services",
+documents:["Aadhaar"],
+charges:"Free",
+processingTime:"Instant",
+portal:"https://abha.abdm.gov.in"
+},
+
+{
+id:410,
+category:"Insurance",
+name:"Ayushman Bharat",
+icon:"🏥",
+description:"Health Insurance Scheme",
+documents:["Aadhaar"],
+charges:"Free",
+processingTime:"Instant",
+portal:"https://beneficiary.nha.gov.in"
+},
+
+{
+id:411,
+category:"Finance",
+name:"Income Tax Portal",
+icon:"💰",
+description:"e-Filing Portal",
+documents:["PAN"],
+charges:"Free",
+processingTime:"Instant",
+portal:"https://www.incometax.gov.in"
+},
+
+{
+id:412,
+category:"Finance",
+name:"e-Pay Tax",
+icon:"💳",
+description:"Income Tax Payment",
+documents:["PAN"],
+charges:"As Per Tax",
+processingTime:"Instant",
+portal:"https://www.incometax.gov.in"
+},
+
+{
+id:413,
+category:"Finance",
+name:"AIS Portal",
+icon:"📊",
+description:"Annual Information Statement",
+documents:["PAN"],
+charges:"Free",
+processingTime:"Instant",
+portal:"https://www.incometax.gov.in"
+},
+
+{
+id:414,
+category:"Finance",
+name:"Form 26AS",
+icon:"📄",
+description:"View Form 26AS",
+documents:["PAN"],
+charges:"Free",
+processingTime:"Instant",
+portal:"https://www.incometax.gov.in"
+},
+
+{
+id:415,
+category:"Finance",
+name:"TRACES",
+icon:"📑",
+description:"TDS & Form 16 Services",
+documents:["PAN"],
+charges:"Free",
+processingTime:"Instant",
+portal:"https://www.tdscpc.gov.in"
+},
+
+{
+id:416,
+category:"Finance",
+name:"GST Calculator",
+icon:"🧮",
+description:"GST Calculation Tools",
+documents:["GSTIN"],
+charges:"Free",
+processingTime:"Instant",
+portal:"https://www.gst.gov.in"
+},
+
+{
+id:417,
+category:"Finance",
+name:"EPFO Passbook",
+icon:"📘",
+description:"PF Passbook",
+documents:["UAN"],
+charges:"Free",
+processingTime:"Instant",
+portal:"https://passbook.epfindia.gov.in"
+},
+
+{
+id:418,
+category:"Finance",
+name:"EPFO Member",
+icon:"👤",
+description:"EPFO Member Portal",
+documents:["UAN"],
+charges:"Free",
+processingTime:"Instant",
+portal:"https://unifiedportal-mem.epfindia.gov.in"
+},
+
+{
+id:419,
+category:"Finance",
+name:"National Pension",
+icon:"👴",
+description:"NPS Services",
+documents:["PRAN"],
+charges:"Free",
+processingTime:"Instant",
+portal:"https://enps.nsdl.com"
+},
+
+{
+id:420,
+category:"Finance",
+name:"Financial Services",
+icon:"🏦",
+description:"Government Financial Services",
+documents:["PAN"],
+charges:"Free",
+processingTime:"Instant",
+portal:"https://services.india.gov.in"
+},
+{
+id:421,
+category:"State Services",
+name:"UP Government",
+icon:"🏛️",
+description:"Official Uttar Pradesh Portal",
+documents:["None"],
+charges:"Free",
+processingTime:"Instant",
+portal:"https://up.gov.in"
+},
+
+{
+id:422,
+category:"State Services",
+name:"UP eDistrict",
+icon:"📄",
+description:"UP eDistrict Services",
+documents:["Aadhaar"],
+charges:"Free",
+processingTime:"Online",
+portal:"https://edistrict.up.gov.in"
+},
+
+{
+id:423,
+category:"State Services",
+name:"UP Bhulekh",
+icon:"🌾",
+description:"Land Records",
+documents:["Khata Number"],
+charges:"Free",
+processingTime:"Instant",
+portal:"https://upbhulekh.gov.in"
+},
+
+{
+id:424,
+category:"State Services",
+name:"UP Khatauni",
+icon:"📋",
+description:"View Khatauni",
+documents:["Gata Number"],
+charges:"Free",
+processingTime:"Instant",
+portal:"https://upbhulekh.gov.in"
+},
+
+{
+id:425,
+category:"State Services",
+name:"IGRS UP",
+icon:"🏠",
+description:"Property Registration",
+documents:["Property Details"],
+charges:"As Per Rules",
+processingTime:"Online",
+portal:"https://igrsup.gov.in"
+},
+
+{
+id:426,
+category:"State Services",
+name:"SSPY UP",
+icon:"👴",
+description:"Social Pension Portal",
+documents:["Aadhaar"],
+charges:"Free",
+processingTime:"Online",
+portal:"https://sspy-up.gov.in"
+},
+
+{
+id:427,
+category:"State Services",
+name:"UP Scholarship",
+icon:"🎓",
+description:"Scholarship Portal",
+documents:["Registration Number"],
+charges:"Free",
+processingTime:"Online",
+portal:"https://scholarship.up.gov.in"
+},
+
+{
+id:428,
+category:"State Services",
+name:"UP Ration Card",
+icon:"🍚",
+description:"Food & Civil Supplies",
+documents:["Ration Card Number"],
+charges:"Free",
+processingTime:"Instant",
+portal:"https://fcs.up.gov.in"
+},
+
+{
+id:429,
+category:"State Services",
+name:"UP Employment",
+icon:"💼",
+description:"Employment Portal",
+documents:["Aadhaar"],
+charges:"Free",
+processingTime:"Online",
+portal:"https://sewayojan.up.nic.in"
+},
+
+{
+id:430,
+category:"State Services",
+name:"UP Police",
+icon:"👮",
+description:"UP Police Portal",
+documents:["None"],
+charges:"Free",
+processingTime:"Instant",
+portal:"https://uppolice.gov.in"
+},
+
+{
+id:431,
+category:"State Services",
+name:"Bihar RTPS",
+icon:"📄",
+description:"RTPS Bihar Services",
+documents:["Aadhaar"],
+charges:"Free",
+processingTime:"Online",
+portal:"https://serviceonline.bihar.gov.in"
+},
+
+{
+id:432,
+category:"State Services",
+name:"Bihar Land Records",
+icon:"🌾",
+description:"Bihar Bhumi",
+documents:["Khata Number"],
+charges:"Free",
+processingTime:"Instant",
+portal:"https://biharbhumi.bihar.gov.in"
+},
+
+{
+id:433,
+category:"State Services",
+name:"MP eDistrict",
+icon:"📑",
+description:"Madhya Pradesh eDistrict",
+documents:["Aadhaar"],
+charges:"Free",
+processingTime:"Online",
+portal:"https://mpedistrict.gov.in"
+},
+
+{
+id:434,
+category:"State Services",
+name:"MP Bhulekh",
+icon:"🏞️",
+description:"MP Land Records",
+documents:["Khasra Number"],
+charges:"Free",
+processingTime:"Instant",
+portal:"https://mpbhulekh.gov.in"
+},
+
+{
+id:435,
+category:"State Services",
+name:"Rajasthan eMitra",
+icon:"💻",
+description:"eMitra Services",
+documents:["Jan Aadhaar"],
+charges:"Free",
+processingTime:"Online",
+portal:"https://emitra.rajasthan.gov.in"
+},
+
+{
+id:436,
+category:"State Services",
+name:"Apna Khata",
+icon:"📋",
+description:"Rajasthan Land Records",
+documents:["Khasra Number"],
+charges:"Free",
+processingTime:"Instant",
+portal:"https://apnakhata.rajasthan.gov.in"
+},
+
+{
+id:437,
+category:"State Services",
+name:"Delhi eDistrict",
+icon:"🏛️",
+description:"Delhi eDistrict Portal",
+documents:["Aadhaar"],
+charges:"Free",
+processingTime:"Online",
+portal:"https://edistrict.delhigovt.nic.in"
+},
+
+{
+id:438,
+category:"State Services",
+name:"Haryana SARAL",
+icon:"📑",
+description:"SARAL Haryana",
+documents:["Family ID"],
+charges:"Free",
+processingTime:"Online",
+portal:"https://saralharyana.gov.in"
+},
+
+{
+id:439,
+category:"State Services",
+name:"Punjab eSewa",
+icon:"🖥️",
+description:"Punjab eSewa Portal",
+documents:["Aadhaar"],
+charges:"Free",
+processingTime:"Online",
+portal:"https://esewa.punjab.gov.in"
+},
+
+{
+id:440,
+category:"State Services",
+name:"Maharashtra Aaple Sarkar",
+icon:"🏛️",
+description:"Aaple Sarkar Portal",
+documents:["Aadhaar"],
+charges:"Free",
+processingTime:"Online",
+portal:"https://aaplesarkar.mahaonline.gov.in"
+},
+{
+id:441,
+category:"Documents",
+name:"CRS Portal",
+icon:"👶",
+description:"Civil Registration System",
+documents:["Birth/Death Details"],
+charges:"As Per Rules",
+processingTime:"Online",
+portal:"https://crsorgi.gov.in"
+},
+
+{
+id:442,
+category:"Documents",
+name:"Birth Certificate",
+icon:"🍼",
+description:"Birth Certificate Services",
+documents:["Hospital Record"],
+charges:"As Per Rules",
+processingTime:"Online",
+portal:"https://crsorgi.gov.in"
+},
+
+{
+id:443,
+category:"Documents",
+name:"Death Certificate",
+icon:"🕊️",
+description:"Death Certificate Services",
+documents:["Death Details"],
+charges:"As Per Rules",
+processingTime:"Online",
+portal:"https://crsorgi.gov.in"
+},
+
+{
+id:444,
+category:"Documents",
+name:"National Population Register",
+icon:"👨‍👩‍👧",
+description:"NPR Services",
+documents:["Aadhaar"],
+charges:"Free",
+processingTime:"Online",
+portal:"https://censusindia.gov.in"
+},
+
+{
+id:445,
+category:"Documents",
+name:"Registrar General India",
+icon:"🏛️",
+description:"RGI Official Portal",
+documents:["None"],
+charges:"Free",
+processingTime:"Instant",
+portal:"https://censusindia.gov.in"
+},
+
+{
+id:446,
+category:"Services",
+name:"National Service Portal",
+icon:"🌐",
+description:"Government Services Directory",
+documents:["None"],
+charges:"Free",
+processingTime:"Instant",
+portal:"https://services.india.gov.in"
+},
+
+{
+id:447,
+category:"Services",
+name:"India.gov.in",
+icon:"🇮🇳",
+description:"National Portal of India",
+documents:["None"],
+charges:"Free",
+processingTime:"Instant",
+portal:"https://www.india.gov.in"
+},
+
+{
+id:448,
+category:"Services",
+name:"MyGov",
+icon:"📢",
+description:"Citizen Participation Portal",
+documents:["Email"],
+charges:"Free",
+processingTime:"Instant",
+portal:"https://www.mygov.in"
+},
+
+{
+id:449,
+category:"Services",
+name:"Digital India",
+icon:"💻",
+description:"Digital India Mission",
+documents:["None"],
+charges:"Free",
+processingTime:"Instant",
+portal:"https://digitalindia.gov.in"
+},
+
+{
+id:450,
+category:"Services",
+name:"Data.gov.in",
+icon:"📊",
+description:"Open Government Data",
+documents:["None"],
+charges:"Free",
+processingTime:"Instant",
+portal:"https://data.gov.in"
+},
+
+{
+id:451,
+category:"Services",
+name:"RTI Online",
+icon:"📄",
+description:"Right to Information",
+documents:["Applicant Details"],
+charges:"₹10",
+processingTime:"Online",
+portal:"https://rtionline.gov.in"
+},
+
+{
+id:452,
+category:"Services",
+name:"PG Portal",
+icon:"📩",
+description:"Public Grievance Portal",
+documents:["Mobile Number"],
+charges:"Free",
+processingTime:"Online",
+portal:"https://pgportal.gov.in"
+},
+
+{
+id:453,
+category:"Services",
+name:"CPGRAMS",
+icon:"📝",
+description:"Central Grievance System",
+documents:["Complaint Details"],
+charges:"Free",
+processingTime:"Online",
+portal:"https://pgportal.gov.in"
+},
+
+{
+id:454,
+category:"Services",
+name:"National Consumer",
+icon:"🛒",
+description:"Consumer Helpline",
+documents:["Complaint Details"],
+charges:"Free",
+processingTime:"Online",
+portal:"https://consumerhelpline.gov.in"
+},
+
+{
+id:455,
+category:"Services",
+name:"UIDAI Help",
+icon:"🆔",
+description:"Aadhaar Support",
+documents:["Aadhaar"],
+charges:"Free",
+processingTime:"Instant",
+portal:"https://uidai.gov.in"
+},
+
+{
+id:456,
+category:"Services",
+name:"Income Tax",
+icon:"💰",
+description:"Income Tax e-Filing",
+documents:["PAN"],
+charges:"Free",
+processingTime:"Instant",
+portal:"https://www.incometax.gov.in"
+},
+
+{
+id:457,
+category:"Services",
+name:"GST Portal",
+icon:"🧾",
+description:"GST Services",
+documents:["GSTIN"],
+charges:"Free",
+processingTime:"Instant",
+portal:"https://www.gst.gov.in"
+},
+
+{
+id:458,
+category:"Services",
+name:"Parivahan",
+icon:"🚗",
+description:"Transport Services",
+documents:["DL/RC"],
+charges:"As Per Rules",
+processingTime:"Online",
+portal:"https://parivahan.gov.in"
+},
+
+{
+id:459,
+category:"Services",
+name:"Passport Seva",
+icon:"🛂",
+description:"Passport Services",
+documents:["Passport Details"],
+charges:"As Per Rules",
+processingTime:"Online",
+portal:"https://www.passportindia.gov.in"
+},
+
+{
+id:460,
+category:"Services",
+name:"CSC Digital Seva",
+icon:"🖥️",
+description:"CSC Portal",
+documents:["CSC ID"],
+charges:"Free",
+processingTime:"Instant",
+portal:"https://digitalseva.csc.gov.in"
+},
+{
+id:461,
+category:"Tools",
+name:"Google Drive",
+icon:"☁️",
+description:"Cloud Storage Service",
+documents:["Google Account"],
+charges:"Free / Paid",
+processingTime:"Instant",
+portal:"https://drive.google.com"
+},
+
+{
+id:462,
+category:"Tools",
+name:"Google Docs",
+icon:"📄",
+description:"Online Document Editor",
+documents:["Google Account"],
+charges:"Free",
+processingTime:"Instant",
+portal:"https://docs.google.com"
+},
+
+{
+id:463,
+category:"Tools",
+name:"Google Sheets",
+icon:"📊",
+description:"Online Spreadsheet",
+documents:["Google Account"],
+charges:"Free",
+processingTime:"Instant",
+portal:"https://sheets.google.com"
+},
+
+{
+id:464,
+category:"Tools",
+name:"Google Forms",
+icon:"📝",
+description:"Create Online Forms",
+documents:["Google Account"],
+charges:"Free",
+processingTime:"Instant",
+portal:"https://forms.google.com"
+},
+
+{
+id:465,
+category:"Tools",
+name:"Google Maps",
+icon:"📍",
+description:"Maps & Navigation",
+documents:["None"],
+charges:"Free",
+processingTime:"Instant",
+portal:"https://maps.google.com"
+},
+
+{
+id:466,
+category:"Tools",
+name:"Microsoft 365",
+icon:"💼",
+description:"Office Online",
+documents:["Microsoft Account"],
+charges:"Free / Paid",
+processingTime:"Instant",
+portal:"https://www.office.com"
+},
+
+{
+id:467,
+category:"Tools",
+name:"OneDrive",
+icon:"☁️",
+description:"Microsoft Cloud Storage",
+documents:["Microsoft Account"],
+charges:"Free / Paid",
+processingTime:"Instant",
+portal:"https://onedrive.live.com"
+},
+
+{
+id:468,
+category:"Tools",
+name:"Adobe Acrobat",
+icon:"📕",
+description:"PDF Services",
+documents:["PDF File"],
+charges:"Free / Paid",
+processingTime:"Instant",
+portal:"https://www.adobe.com/acrobat/online.html"
+},
+
+{
+id:469,
+category:"Tools",
+name:"iLovePDF",
+icon:"📑",
+description:"Merge, Split & Convert PDF",
+documents:["PDF File"],
+charges:"Free",
+processingTime:"Instant",
+portal:"https://www.ilovepdf.com"
+},
+
+{
+id:470,
+category:"Tools",
+name:"Smallpdf",
+icon:"📄",
+description:"Online PDF Tools",
+documents:["PDF File"],
+charges:"Free / Paid",
+processingTime:"Instant",
+portal:"https://smallpdf.com"
+},
+
+{
+id:471,
+category:"Tools",
+name:"Canva",
+icon:"🎨",
+description:"Graphic Design Tool",
+documents:["Images"],
+charges:"Free / Paid",
+processingTime:"Instant",
+portal:"https://www.canva.com"
+},
+
+{
+id:472,
+category:"Tools",
+name:"Remove.bg",
+icon:"🖼️",
+description:"Background Remover",
+documents:["Image"],
+charges:"Free / Paid",
+processingTime:"Instant",
+portal:"https://www.remove.bg"
+},
+
+{
+id:473,
+category:"Tools",
+name:"Photopea",
+icon:"🖌️",
+description:"Online Photo Editor",
+documents:["Image"],
+charges:"Free",
+processingTime:"Instant",
+portal:"https://www.photopea.com"
+},
+
+{
+id:474,
+category:"Tools",
+name:"ChatGPT",
+icon:"🤖",
+description:"AI Assistant",
+documents:["OpenAI Account"],
+charges:"Free / Paid",
+processingTime:"Instant",
+portal:"https://chatgpt.com"
+},
+
+{
+id:475,
+category:"Tools",
+name:"Gemini",
+icon:"✨",
+description:"Google AI Assistant",
+documents:["Google Account"],
+charges:"Free / Paid",
+processingTime:"Instant",
+portal:"https://gemini.google.com"
+},
+
+{
+id:476,
+category:"Tools",
+name:"DeepL Translator",
+icon:"🌐",
+description:"Language Translation",
+documents:["Text"],
+charges:"Free / Paid",
+processingTime:"Instant",
+portal:"https://www.deepl.com"
+},
+
+{
+id:477,
+category:"Tools",
+name:"Google Translate",
+icon:"🌍",
+description:"Translate Languages",
+documents:["Text"],
+charges:"Free",
+processingTime:"Instant",
+portal:"https://translate.google.com"
+},
+
+{
+id:478,
+category:"Tools",
+name:"QR Code Generator",
+icon:"🔳",
+description:"Create QR Codes",
+documents:["URL / Text"],
+charges:"Free",
+processingTime:"Instant",
+portal:"https://www.qr-code-generator.com"
+},
+
+{
+id:479,
+category:"Tools",
+name:"Speedtest",
+icon:"📶",
+description:"Internet Speed Test",
+documents:["None"],
+charges:"Free",
+processingTime:"Instant",
+portal:"https://www.speedtest.net"
+},
+
+{
+id:480,
+category:"Tools",
+name:"VirusTotal",
+icon:"🛡️",
+description:"Virus & URL Scanner",
+documents:["File / URL"],
+charges:"Free",
+processingTime:"Instant",
+portal:"https://www.virustotal.com"
+},
+
+{
+id:481,
+category:"Tools",
+name:"AnyDesk",
+icon:"💻",
+description:"Remote Desktop",
+documents:["Device ID"],
+charges:"Free / Paid",
+processingTime:"Instant",
+portal:"https://anydesk.com"
+},
+
+{
+id:482,
+category:"Tools",
+name:"TeamViewer",
+icon:"🖥️",
+description:"Remote Support",
+documents:["Device ID"],
+charges:"Free / Paid",
+processingTime:"Instant",
+portal:"https://www.teamviewer.com"
+},
+
+{
+id:483,
+category:"Tools",
+name:"Zoom",
+icon:"🎥",
+description:"Video Meetings",
+documents:["Meeting ID"],
+charges:"Free / Paid",
+processingTime:"Instant",
+portal:"https://zoom.us"
+},
+
+{
+id:484,
+category:"Tools",
+name:"Google Meet",
+icon:"📹",
+description:"Online Meetings",
+documents:["Google Account"],
+charges:"Free",
+processingTime:"Instant",
+portal:"https://meet.google.com"
+},
+
+{
+id:485,
+category:"Tools",
+name:"Dropbox",
+icon:"📦",
+description:"Cloud Storage",
+documents:["Dropbox Account"],
+charges:"Free / Paid",
+processingTime:"Instant",
+portal:"https://www.dropbox.com"
+},
+
+{
+id:486,
+category:"Tools",
+name:"WeTransfer",
+icon:"📤",
+description:"Large File Sharing",
+documents:["File"],
+charges:"Free / Paid",
+processingTime:"Instant",
+portal:"https://wetransfer.com"
+},
+
+{
+id:487,
+category:"Tools",
+name:"GitHub",
+icon:"💻",
+description:"Code Repository",
+documents:["GitHub Account"],
+charges:"Free / Paid",
+processingTime:"Instant",
+portal:"https://github.com"
+},
+
+{
+id:488,
+category:"Tools",
+name:"Stack Overflow",
+icon:"📚",
+description:"Developer Community",
+documents:["None"],
+charges:"Free",
+processingTime:"Instant",
+portal:"https://stackoverflow.com"
+},
+
+{
+id:489,
+category:"Tools",
+name:"CloudConvert",
+icon:"🔄",
+description:"File Converter",
+documents:["File"],
+charges:"Free / Paid",
+processingTime:"Instant",
+portal:"https://cloudconvert.com"
+},
+
+{
+id:490,
+category:"Tools",
+name:"TinyPNG",
+icon:"🖼️",
+description:"Image Compression",
+documents:["Image"],
+charges:"Free",
+processingTime:"Instant",
+portal:"https://tinypng.com"
+},
+
+{
+id:491,
+category:"Tools",
+name:"Compress PDF",
+icon:"📕",
+description:"Compress PDF Online",
+documents:["PDF"],
+charges:"Free",
+processingTime:"Instant",
+portal:"https://www.ilovepdf.com/compress_pdf"
+},
+
+{
+id:492,
+category:"Tools",
+name:"Merge PDF",
+icon:"📑",
+description:"Merge PDF Files",
+documents:["PDF"],
+charges:"Free",
+processingTime:"Instant",
+portal:"https://www.ilovepdf.com/merge_pdf"
+},
+
+{
+id:493,
+category:"Tools",
+name:"Split PDF",
+icon:"✂️",
+description:"Split PDF Files",
+documents:["PDF"],
+charges:"Free",
+processingTime:"Instant",
+portal:"https://www.ilovepdf.com/split_pdf"
+},
+
+{
+id:494,
+category:"Tools",
+name:"JPG to PDF",
+icon:"🖼️",
+description:"Convert JPG to PDF",
+documents:["Image"],
+charges:"Free",
+processingTime:"Instant",
+portal:"https://www.ilovepdf.com/jpg_to_pdf"
+},
+
+{
+id:495,
+category:"Tools",
+name:"PDF to JPG",
+icon:"📷",
+description:"Convert PDF to JPG",
+documents:["PDF"],
+charges:"Free",
+processingTime:"Instant",
+portal:"https://www.ilovepdf.com/pdf_to_jpg"
+},
+
+{
+id:496,
+category:"Tools",
+name:"PDF to Word",
+icon:"📘",
+description:"Convert PDF to DOCX",
+documents:["PDF"],
+charges:"Free",
+processingTime:"Instant",
+portal:"https://www.ilovepdf.com/pdf_to_word"
+},
+
+{
+id:497,
+category:"Tools",
+name:"Word to PDF",
+icon:"📄",
+description:"Convert DOCX to PDF",
+documents:["Word File"],
+charges:"Free",
+processingTime:"Instant",
+portal:"https://www.ilovepdf.com/word_to_pdf"
+},
+
+{
+id:498,
+category:"Tools",
+name:"Image Compressor",
+icon:"🖼️",
+description:"Compress Images",
+documents:["Image"],
+charges:"Free",
+processingTime:"Instant",
+portal:"https://tinypng.com"
+},
+
+{
+id:499,
+category:"Tools",
+name:"Cyber Cafe Toolkit",
+icon:"🖥️",
+description:"Daily Useful Online Tools",
+documents:["None"],
+charges:"Free",
+processingTime:"Instant",
+portal:"https://services.india.gov.in"
+},
+
+];
